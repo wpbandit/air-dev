@@ -25,6 +25,7 @@ $airconfig = array(
 	//! Theme modules menu
 	'theme-modules-menu' => array(
 		'social'	=> 'Social',
+		'test'		=> 'Test'
 	),
 
 	//! Text domain
