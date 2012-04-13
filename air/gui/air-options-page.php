@@ -37,6 +37,7 @@
 			
 				<div id="air-footer">
 					<p class="submit air-submit">
+						<input type="submit" class="button-secondary" value="Reset Options" />
 						<input type="submit" class="button-primary" value="Save Changes" />
 					</p>
 				</div><!--/air-footer-->
