@@ -313,7 +313,7 @@ $setting['sections']['post-details'] = array(
 
 $setting[] = array(
 	'id'		=> 'post-hide-fields',
-	'label'		=> 'Enable for:',
+	'label'		=> 'Enable',
 	'section'	=> 'post-details',
 	'type'		=> 'checkbox',
 	'choices'	=> array(
