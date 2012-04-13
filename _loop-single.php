@@ -28,7 +28,7 @@
 	
 	<div class="text">
 		<?php the_content(); ?>
-		<?php wp_link_pages(array('before'=>'<div class="entry-page-links">'.bandit::get_lang('post_page_links'),'after'=>'</div>')); ?>
+		<?php wp_link_pages(array('before'=>'<div class="entry-page-links">','after'=>'</div>')); ?>
 	</div>
 	<?php the_tags('<p class="entry-tags"><span>Tags:</span> ','','</p>'); ?>	
 	<p class="entry-category"><span>Posted in:</span> <?php the_category(', '); ?></p>
@@ -36,7 +36,7 @@
 </article>
 
 <div class="clear"></div>
-<?php if(bandit::comments_enabled() || have_comments()): ?>
+<?php if(have_comments()): ?>
 	<div id="entry-comments">
 		<?php comments_template(); ?>
 	</div>
