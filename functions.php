@@ -7,8 +7,8 @@
 $airconfig = array(
 
 	//! Theme details
-	'theme_name'		=> 'Test',
-	'theme_version'		=> '0.1',
+	'theme_name'		=> 'Theme Name',
+	'theme_version'		=> '1.0',
 	'theme_options'		=> 'bandit_air',
 
 	//! Admin menu slug
