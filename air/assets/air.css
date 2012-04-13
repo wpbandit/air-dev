@@ -75,7 +75,7 @@ i.air-icon.general-styling { background-position: 0 -48px; }
 #air-main-inner { padding: 0 20px 20px 20px; }
 
 .air-section { margin-bottom: 20px; }
-.air-submit { padding: 0; }
+.air-submit { padding: 0; margin: 6px 0; }
 
 
 /*-------------------------------------------------------------------------- */
