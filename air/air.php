@@ -148,6 +148,7 @@ class Air extends AirBase {
 		# Set page hooks
 		self::$hook = array();
 		self::$hook[] = get_plugin_page_hook('theme-options','admin.php');
+		self::$hook[] = get_plugin_page_hook('theme-modules','admin.php');
 
 		# Load validation library
 		require(AIR_PATH.'/inc/air-validate.php');
@@ -255,11 +256,14 @@ class Air extends AirBase {
 	}
 
 	/**
-		Print theme options menu
+		Print theme admin menu
 			@public
 	**/
-	static function print_theme_options_menu() {
-		$menu = self::get_config('theme_options_menu');
+	static function print_theme_admin_menu() {
+		# Get page
+		$page = esc_attr($_GET['page']);
+
+		$menu = self::get_config($page.'-menu');
 		if($menu) {
 			# Set current section
 			$current = isset($_GET['section'])?esc_attr($_GET['section']):key($menu);
@@ -268,7 +272,7 @@ class Air extends AirBase {
 			$output = '';
 			foreach($menu as $key=>$value) {
 				# Set menu item url
-				$url = admin_url('/admin.php?page='.'theme-options'.'&section='.$key);
+				$url = admin_url('/admin.php?page='.$page.'&section='.$key);
 
 				# Set current class ?
 				$output .= ($current === $key)?'<li class="current">':'<li>'; 

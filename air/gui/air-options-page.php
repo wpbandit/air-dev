@@ -11,7 +11,7 @@
 		<div id="air-sidebar">
 			<ul id="air-menu">
 				<li class="air-menu-title">Theme Options Menu</li>
-				<?php Air::print_theme_options_menu(); ?>
+				<?php Air::print_theme_admin_menu(); ?>
 			</ul>
 		</div><!--/air-sidebar-->
 
