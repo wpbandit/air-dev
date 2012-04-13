@@ -1,7 +1,7 @@
 	<div id="subfooter">
 		<div id="subfooter-inner" class="container-24">
 		
-			<p>test</p>
+			<p>subfooter</p>
 			
 			<div class="clear"></div>
 		</div><!--/subfooter-inner-->
@@ -10,7 +10,7 @@
 	<footer id="footer">
 		<div id="footer-inner" class="container-24">
 		
-			<p>test</p>
+			<p>footer</p>
 			
 			<div class="clear"></div>
 		</div><!--/footer-inner-->	

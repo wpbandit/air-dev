@@ -19,12 +19,13 @@
 	
 	<div id="topbar">
 		<div id="topbar-inner" class="container-24">
-			<p>test</p>
+			<p>topbar</p>
 		</div><!--/topbar-inner-->
 	</div><!--/topbar-->
 	
 	<div id="header">
 		<div id="header-inner" class="container-24">
+			<p>header</p>
 			<div class="clear"></div>
 			<?php wp_nav_menu(array('container'=>'nav','container_id'=>'nav-header','theme_location'=>'bandit_nav_header','menu_id'=>'nav','fallback_cb'=>FALSE)); ?>
 		</div><!--/header-inner-->
