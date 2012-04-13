@@ -182,7 +182,7 @@ class Air extends AirBase {
 		$js_dep = array('media-upload','thickbox','jquery');
 
 		# If design section, add colorpicker css/js
-		if(isset($_GET['section']) && ('design' === esc_attr($_GET['section']))) {
+		if(isset($_GET['section']) && ('styling' === esc_attr($_GET['section']))) {
 			# Register colorpicker.css
 			wp_register_style('air-colorpicker',$url.'/colorpicker.css');
 			# Add colorpicker.css to air.css dependencies

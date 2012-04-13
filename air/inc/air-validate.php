@@ -40,6 +40,15 @@ class AirValidate extends AirBase {
 			case 'blog':
 				$valid = self::blog($input,$valid);
 				break;
+			case 'header':
+				$valid = self::header($input,$valid);
+				break;
+			case 'footer':
+				$valid = self::footer($input,$valid);
+				break;
+			case 'styling':
+				$valid = self::styling($input,$valid);
+				break;
 		}
 
 		# Check for errors
@@ -124,6 +133,11 @@ class AirValidate extends AirBase {
 			@private
 	**/
 	private static function header(array $input, $valid) {
+		# Custom Logo
+		$valid['custom-logo'] = esc_url($input['custom-logo']);
+		# Tagline
+		$valid['disable-tagline'] = isset($input['disable-tagline'])?'1':'0';
+
 		# Return validated options
 		return $valid;
 	}
@@ -148,6 +162,11 @@ class AirValidate extends AirBase {
 			@private
 	**/
 	private static function footer(array $input, $valid) {
+		# Footer Text
+		$valid['footer-text'] = esc_textarea($input['footer-text']);
+		# Footer Widgets
+		$valid['footer-widgets'] = isset($input['footer-widgets'])?'1':'0';;
+
 		# Return validated options
 		return $valid;
 	}
@@ -160,6 +179,27 @@ class AirValidate extends AirBase {
 			@private
 	**/
 	private static function styling(array $input, $valid) {
+		# Body Background Color
+		$valid['styling-body-bg-color'] = esc_attr($input['styling-body-bg-color']);
+		# Body Background Image
+		$valid['styling-body-bg-image'] = esc_url($input['styling-body-bg-image']);
+		# Body Background Image Repeat
+		$valid['styling-body-bg-image-repeat'] = esc_attr($input['styling-body-bg-image-repeat']);
+
+		# Header Background Color
+		$valid['styling-header-bg-color'] = esc_attr($input['styling-header-bg-color']);
+		# Header Background Image
+		$valid['styling-header-bg-image'] = esc_url($input['styling-header-bg-image']);
+		# Header Background Image Repeat
+		$valid['styling-header-bg-image-repeat'] = esc_attr($input['styling-header-bg-image-repeat']);
+
+		# Footer Background Color
+		$valid['styling-footer-bg-color'] = esc_attr($input['styling-footer-bg-color']);
+		# Footer Background Image
+		$valid['styling-footer-bg-image'] = esc_url($input['styling-footer-bg-image']);
+		# Footer Background Image Repeat
+		$valid['styling-footer-bg-image-repeat'] = esc_attr($input['styling-footer-bg-image-repeat']);
+
 		# Return validated options
 		return $valid;
 	}
