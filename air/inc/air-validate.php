@@ -83,18 +83,18 @@ class AirValidate extends AirBase {
 	**/
 	private static function blog(array $input, $valid) {
 		# Read More Text
-		$valid['read-more'] = '';
+		$valid['read-more'] = esc_attr($input['read-more']);
 		# Excerpt More Text
-		$valid['excerpt-more'] = '';
+		$valid['excerpt-more'] = esc_attr($input['excerpt-more']);
 		# Excerpt Length
-		$valid['excerpt-length'] = '';
+		$valid['excerpt-length'] = absint($input['excerpt-length']);
 
 		# Post Content Home
-		$valid['post-content-home'] = isset($input['post-content-home'])?'1':'0';
+		$valid['post-content-home'] = ('1'===$input['post-content-home'])?'1':'0';
 		# Post Content Archive
-		$valid['post-content-archive'] = isset($input['post-content-archive'])?'1':'0';
+		$valid['post-content-archive'] = ('1'===$input['post-content-archive'])?'1':'0';
 		# Post Content Search
-		$valid['post-content-search'] = isset($input['post-content-search'])?'1':'0';
+		$valid['post-content-search'] = ('1'===$input['post-content-search'])?'1':'0';
 
 		# Post Hide Author
 		$valid['post-hide-author'] = isset($input['post-hide-author'])?'1':'0';
