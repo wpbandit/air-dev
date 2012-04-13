@@ -19,8 +19,8 @@
 
 			<div id="air-subheader">
 				<ul id="air-headmenu">
-					<li><a href="#"><i class="air-icon changelog"></i>View Changelog</a></li>
-					<li><a href="http://member.wpbandit.com/forums/" target="_blank"><i class="air-icon forums"></i>View Forums</a></li>
+					<li><a href="#"><i class="air-icon air-icon-changelog"></i>View Changelog</a></li>
+					<li><a href="http://member.wpbandit.com/forums/" target="_blank"><i class="air-icon air-icon-forums"></i>View Forums</a></li>
 				</ul>
 			</div><!--/air-subheader-->
 

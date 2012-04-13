@@ -16,11 +16,11 @@ $airconfig = array(
 
 	//! Theme options menu
 	'theme_options_menu' => array(
-		'general'	=> 'General',
+		'general'	=> 'General Settings',
+		'blog'		=> 'Blog Options',
 		'header'	=> 'Header',
-		'blog'		=> 'Blog',
 		'footer'	=> 'Footer',
-		'design'	=> 'Design',
+		'styling'	=> 'Styling',
 	),
 
 	//! Text domain

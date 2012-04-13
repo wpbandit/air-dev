@@ -146,7 +146,7 @@ $setting[] = array(
 //! Excerpt More
 $setting[] = array(
 	'id'		=> 'excerpt-more',
-	'label'		=> 'Excerpt More Text',
+	'label'		=> 'Excerpt Ending',
 	'section'	=> 'blog-general',
 	'type'		=> 'text',
 	'class'		=> 'small-text'

@@ -61,10 +61,10 @@ ul#air-menu li.current a { background: #fff; color: #21759b; border-right-color:
 ul#air-menu li.air-menu-title { background: #e4e4e4; color: #999; text-transform: uppercase; font-size: 12px; line-height: 16px; padding: 12px 14px; border-top: 1px solid #f9f9f9; border-bottom: 1px solid #d8d8d8; border-right: 1px solid #d8d8d8; }
 
 i.air-icon { background: url(img/air-icons.png) no-repeat 0 0; width: 16px; height: 16px; float: left; margin-right: 6px; }
-i.air-icon.forums { background-position: 0 0; }
-i.air-icon.changelog { background-position: 0 -16px; }
-i.air-icon.general-settings { background-position: 0 -32px; }
-i.air-icon.general-styling { background-position: 0 -48px; }
+i.air-icon.air-icon-forums { background-position: 0 0; }
+i.air-icon.air-icon-changelog { background-position: 0 -16px; }
+i.air-icon.air-icon-general { background-position: 0 -32px; }
+i.air-icon.air-icon-styling { background-position: 0 -48px; }
 
 
 /*-------------------------------------------------------------------------- */
