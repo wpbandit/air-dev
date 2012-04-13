@@ -3,7 +3,8 @@
 /*-------------------------------------------------------------------------- */
 .air-clear { clear: both; } 
 .form-table th, .form-wrap label { color: #777; }
-.form-table th { width: 155px; }
+.form-table th { width: 150px; }
+.button-secondary { margin-left: 6px; }
 textarea, input { padding-top: 4px; padding-bottom: 4px; }
 
 .air-text { color: #777; line-height: 1.5em; }
