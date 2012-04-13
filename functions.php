@@ -21,6 +21,7 @@ $airconfig = array(
 		'header'	=> 'Header',
 		'footer'	=> 'Footer',
 		'styling'	=> 'Styling',
+		'typography'=> 'Typography',
 	),
 
 	//! Text domain
