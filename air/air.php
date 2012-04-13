@@ -207,37 +207,28 @@ class Air extends AirBase {
 		$title = isset(self::$config['theme_name'])?self::$config['theme_name']:'Air Framework';
 
 		# Create top-level menu
-		add_menu_page($title,$title,'manage_options','theme-options',__CLASS__.'::admin_options_page');
+		add_menu_page($title,$title,'manage_options','theme-options',__CLASS__.'::admin_page');
 
 		# Create sub menu pages
 		add_submenu_page('theme-options','Theme Options','Theme Options',
-			'manage_options','theme-options',__CLASS__.'::admin_options_page');
+			'manage_options','theme-options',__CLASS__.'::admin_page');
 		add_submenu_page('theme-options','Theme Modules','Theme Modules',
-			'manage_options','theme-modules',__CLASS__.'::admin_modules_page');
+			'manage_options','theme-modules',__CLASS__.'::admin_page');
 	}
 
 	/**
 		Admin options page
 			@public
 	**/
-	static function admin_options_page() {
+	static function admin_page() {
+		# Get page
+		$page = esc_attr($_GET['page']);
+
 		# Set section
 		$section = isset($_GET['section'])?esc_attr($_GET['section']):'general';
 
 		# Load options page
-		require(AIR_PATH.'/gui/air-options-page.php');
-	}
-
-	/**
-		Admin modules page
-			@public
-	**/
-	static function admin_modules_page() {
-		# Set section
-		$section = isset($_GET['section'])?esc_attr($_GET['section']):'general';
-
-		# Load options page
-		require(AIR_PATH.'/gui/air-modules-page.php');
+		require(AIR_PATH.'/gui/air-'.$page.'-page.php');
 	}
 
 	/**
