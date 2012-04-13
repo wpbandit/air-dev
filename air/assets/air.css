@@ -66,11 +66,11 @@ i.air-icon.general-styling { background-position: 0 -48px; }
 /*-------------------------------------------------------------------------- */
 #air-main { background: #fff; width: 635px; float: left; min-height: 500px; padding-bottom: 60px; position: relative; 
 -moz-border-radius: 0 0 10px 0; -webkit-border-radius: 0 0 10px 0; border-radius: 0 0 10px 0;}
-#air-main-inner { padding: 20px; }
+#air-main-inner { padding: 0 20px 20px 20px; }
 
 .air-section { margin-bottom: 20px; }
 .air-text { color: #666; line-height: 1.5em; }
-.air-text h3 { font-size: 14px; color: #444; font-weight: bold; border-bottom: 1px solid #eee; padding-bottom: 6px; margin-bottom: 10px; }
+.air-text h3 { font-size: 14px; color: #444; font-weight: bold; border-bottom: 1px solid #eee; padding-bottom: 6px; margin-bottom: 10px; margin-top: 20px; }
 .air-submit { padding: 0; }
 
 
