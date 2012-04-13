@@ -306,7 +306,7 @@ $setting[] = array(
 
 /* Sidebar : Widgets
 /*---------------------------------------------------------*/
-$setting['sections']['post-details'] = array(
+$setting['sections']['sidebar-widgets'] = array(
 	'title'		=> 'Separate Widget Areas',
 	'tab'		=> 'sidebar'
 );
@@ -314,7 +314,7 @@ $setting['sections']['post-details'] = array(
 $setting[] = array(
 	'id'		=> 'post-hide-fields',
 	'label'		=> 'Enable',
-	'section'	=> 'post-details',
+	'section'	=> 'sidebar-widgets',
 	'type'		=> 'checkbox',
 	'choices'	=> array(
 		'sidebar-widget-single'	=> 'Blog Single',

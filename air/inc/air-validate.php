@@ -61,7 +61,7 @@ class AirValidate extends AirBase {
 			@private
 	**/
 	private static function general(array $input, $valid) {
-		# Theme style
+		# Theme Style
 		$valid['style'] = esc_attr($input['style']);
 		# Feed URL
 		$valid['feed-url'] = esc_url($input['feed-url']);
@@ -81,7 +81,99 @@ class AirValidate extends AirBase {
 			@param $valid array
 			@private
 	**/
-	private static function blog(array $input, array $valid) {
+	private static function blog(array $input, $valid) {
+		# Read More Text
+		$valid['read-more'] = esc_attr($input['read-more']);
+		# Excerpt More Text
+		$valid['excerpt-more'] = esc_attr($input['excerpt-more']);
+		# Excerpt Length
+		$valid['excerpt-length'] = absint($input['excerpt-length']);
+
+		# Post Content Home
+		$valid['post-content-home'] = ('1'===$input['post-content-home'])?'1':'0';
+		# Post Content Archive
+		$valid['post-content-archive'] = ('1'===$input['post-content-archive'])?'1':'0';
+		# Post Content Search
+		$valid['post-content-search'] = ('1'===$input['post-content-search'])?'1':'0';
+
+		# Post Hide Author
+		$valid['post-hide-author'] = isset($input['post-hide-author'])?'1':'0';
+		# Post Hide Date
+		$valid['post-hide-date'] = isset($input['post-hide-date'])?'1':'0';
+		# Post Hide Categories
+		$valid['post-hide-categories'] = isset($input['post-hide-categories'])?'1':'0';
+		# Post Hide Tags
+		$valid['post-hide-tags'] = isset($input['post-hide-tags'])?'1':'0';
+
+		# Comments Form Location
+		$valid['comments-form-location'] = ('top'===$input['comments-form-location'])?'top':'bottom';
+		# Disable Comments Pages
+		$valid['comments-pages-disable'] = isset($input['comments-pages-disable'])?'1':'0';
+		# Disable Comments Posts
+		$valid['comments-posts-disable'] = isset($input['comments-posts-disable'])?'1':'0';
+
+		# Return validated options
+		return $valid;
+	}
+
+	/**
+		Header
+			@return array
+			@param $input array
+			@param $valid array
+			@private
+	**/
+	private static function header(array $input, $valid) {
+		# Return validated options
+		return $valid;
+	}
+
+	/**
+		Sidebar
+			@return array
+			@param $input array
+			@param $valid array
+			@private
+	**/
+	private static function sidebar(array $input, $valid) {
+		# Return validated options
+		return $valid;
+	}
+
+	/**
+		Footer
+			@return array
+			@param $input array
+			@param $valid array
+			@private
+	**/
+	private static function footer(array $input, $valid) {
+		# Return validated options
+		return $valid;
+	}
+
+	/**
+		Styling
+			@return array
+			@param $input array
+			@param $valid array
+			@private
+	**/
+	private static function styling(array $input, $valid) {
+		# Return validated options
+		return $valid;
+	}
+
+	/**
+		Typography
+			@return array
+			@param $input array
+			@param $valid array
+			@private
+	**/
+	private static function typography(array $input, $valid) {
+		# Return validated options
+		return $valid;
 	}
 
 }
