@@ -16,8 +16,8 @@ $airconfig = array(
 
 	//! Theme options menu
 	'theme_options_menu' => array(
-		'general'	=> 'General Settings',
-		'blog'		=> 'Blog Options',
+		'general'	=> 'General',
+		'blog'		=> 'Blog',
 		'header'	=> 'Header',
 		'sidebar'	=> 'Sidebar',
 		'footer'	=> 'Footer',
