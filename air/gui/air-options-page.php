@@ -27,10 +27,14 @@
 			<form method="post" action="options.php">
 				<div id="air-main-inner" class="air-text">
 					<div class="air-section">
-							<?php settings_fields('air-settings'); ?>
-							<?php do_settings_sections('air-'.$section); ?>
 						
-							<input type="hidden" name="<?php echo Air::$option_name; ?>[section]" value="<?php echo $section; ?>">
+						<div id="air-save-notice">
+							<p>Settings have been saved.</p>
+						</div>
+						<?php settings_fields('air-settings'); ?>
+						<?php do_settings_sections('air-'.$section); ?>				
+						<input type="hidden" name="<?php echo Air::$option_name; ?>[section]" value="<?php echo $section; ?>">
+						
 					</div>
 					<div class="air-clear"></div>
 				</div><!--/air-main-inner-->
