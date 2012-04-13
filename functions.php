@@ -12,7 +12,7 @@ $airconfig = array(
 	'theme_options'		=> 'bandit_air',
 
 	//! Theme options menu
-	'theme_options_menu' => array(
+	'theme-options-menu' => array(
 		'general'	=> 'General',
 		'blog'		=> 'Blog',
 		'header'	=> 'Header',
@@ -20,6 +20,11 @@ $airconfig = array(
 		'footer'	=> 'Footer',
 		'styling'	=> 'Styling',
 		'typography'=> 'Typography',
+	),
+
+	//! Theme modules menu
+	'theme-modules-menu' => array(
+		'maintenance'	=> 'Maintenance',
 	),
 
 	//! Text domain
