@@ -300,37 +300,37 @@ $setting[] = array(
 );
 
 /*-------------------------------------------------------------------------- */
-/* Theme Settings :: Design
+/* Theme Settings :: Styling
 /*-------------------------------------------------------------------------- */
 
-/* Design : Body
+/* Styling : Body
 /*---------------------------------------------------------*/
-$setting['sections']['design-body'] = array(
+$setting['sections']['styling-body'] = array(
 	'title'		=> 'Body',
-	'tab'		=> 'design'
+	'tab'		=> 'styling'
 );
 
 //! Body BG Color
 $setting[] = array(
-	'id'		=> 'design-body-bg-color',
+	'id'		=> 'styling-body-bg-color',
 	'label'		=> 'Background Color',
-	'section'	=> 'design-body',
+	'section'	=> 'styling-body',
 	'type'		=> 'colorpicker'
 );
 
 //! Body BG Image
 $setting[] = array(
-	'id'		=> 'design-body-bg-image',
+	'id'		=> 'styling-body-bg-image',
 	'label'		=> 'Background Image',
-	'section'	=> 'design-body',
+	'section'	=> 'styling-body',
 	'type'		=> 'image'
 );
 
 //! Body BG Image Repeat
 $setting[] = array(
-	'id'		=> 'design-body-bg-image-repeat',
+	'id'		=> 'styling-body-bg-image-repeat',
 	'label'		=> 'Background Image Repeat',
-	'section'	=> 'design-body',
+	'section'	=> 'styling-body',
 	'type'		=> 'select',
 	'choices'	=> array(
 		'no-repeat' => 'no-repeat',
@@ -340,34 +340,34 @@ $setting[] = array(
 	)
 );
 
-/* Design : Header
+/* Styling : Header
 /*---------------------------------------------------------*/
-$setting['sections']['design-header'] = array(
+$setting['sections']['styling-header'] = array(
 	'title'		=> 'Header',
-	'tab'		=> 'design'
+	'tab'		=> 'styling'
 );
 
 //! Header BG Color
 $setting[] = array(
-	'id'		=> 'design-header-bg-color',
+	'id'		=> 'styling-header-bg-color',
 	'label'		=> 'Background Color',
-	'section'	=> 'design-header',
+	'section'	=> 'styling-header',
 	'type'		=> 'colorpicker'
 );
 
 //! Header BG Image
 $setting[] = array(
-	'id'		=> 'design-header-bg-image',
+	'id'		=> 'styling-header-bg-image',
 	'label'		=> 'Background Image',
-	'section'	=> 'design-header',
+	'section'	=> 'styling-header',
 	'type'		=> 'image'
 );
 
 //! Header BG Image Repeat
 $setting[] = array(
-	'id'		=> 'design-header-bg-image-repeat',
+	'id'		=> 'styling-header-bg-image-repeat',
 	'label'		=> 'Background Image Repeat',
-	'section'	=> 'design-header',
+	'section'	=> 'styling-header',
 	'type'		=> 'select',
 	'choices'	=> array(
 		'no-repeat' => 'no-repeat',
@@ -377,34 +377,34 @@ $setting[] = array(
 	)
 );
 
-/* Design : Footer
+/* Styling : Footer
 /*---------------------------------------------------------*/
-$setting['sections']['design-footer'] = array(
+$setting['sections']['styling-footer'] = array(
 	'title'		=> 'Footer',
-	'tab'		=> 'design'
+	'tab'		=> 'styling'
 );
 
 //! Footer BG Color
 $setting[] = array(
-	'id'		=> 'design-footer-bg-color',
+	'id'		=> 'styling-footer-bg-color',
 	'label'		=> 'Background Color',
-	'section'	=> 'design-footer',
+	'section'	=> 'styling-footer',
 	'type'		=> 'colorpicker'
 );
 
 //! Footer BG Image
 $setting[] = array(
-	'id'		=> 'design-footer-bg-image',
+	'id'		=> 'styling-footer-bg-image',
 	'label'		=> 'Background Image',
-	'section'	=> 'design-footer',
+	'section'	=> 'styling-footer',
 	'type'		=> 'image'
 );
 
 //! Footer BG Image Repeat
 $setting[] = array(
-	'id'		=> 'design-footer-bg-image-repeat',
+	'id'		=> 'styling-footer-bg-image-repeat',
 	'label'		=> 'Background Image Repeat',
-	'section'	=> 'design-footer',
+	'section'	=> 'styling-footer',
 	'type'		=> 'select',
 	'choices'	=> array(
 		'no-repeat' => 'no-repeat',
