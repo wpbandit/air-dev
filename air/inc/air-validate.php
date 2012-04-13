@@ -43,6 +43,9 @@ class AirValidate extends AirBase {
 			case 'header':
 				$valid = self::header($input,$valid);
 				break;
+			case 'footer':
+				$valid = self::footer($input,$valid);
+				break;
 		}
 
 		# Check for errors
@@ -156,6 +159,11 @@ class AirValidate extends AirBase {
 			@private
 	**/
 	private static function footer(array $input, $valid) {
+		# Footer Text
+		$valid['footer-text'] = esc_textarea($input['footer-text']);
+		# Footer Widgets
+		$valid['footer-widgets'] = isset($input['footer-widgets'])?'1':'0';;
+
 		# Return validated options
 		return $valid;
 	}
