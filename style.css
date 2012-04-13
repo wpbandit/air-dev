@@ -168,14 +168,14 @@ h1, h2, h3, h4, h5, h6 { color: #222; }
 /* ------------------------------------------------------------------------- *
  *  Topbar
 /* ------------------------------------------------------------------------- */
-#topbar { background: #224f69; }
+#topbar { background: #224f69; color: #fff; }
 #topbar-inner { background: #2a5c78; height: 40px; }
 
 
 /* ------------------------------------------------------------------------- *
  *  Header
 /* ------------------------------------------------------------------------- */
-#header { background: #417796; }
+#header { background: #417796; color: #fff; }
 #header-inner { background: #5894b7; height: 200px; }
 
 #logo { font-size: 36px; font-weight: 700; }
@@ -410,14 +410,14 @@ a.more-link { font-weight: 600; }
 /* ------------------------------------------------------------------------- *
  *  Subfooter
 /* ------------------------------------------------------------------------- */
-#subfooter { background: #444; }
+#subfooter { background: #444; color: #fff; }
 #subfooter-inner { background: #555; height: 100px; }
 
 
 /* ------------------------------------------------------------------------- *
  *  Footer
 /* ------------------------------------------------------------------------- */
-#footer { background: #222; }
+#footer { background: #222; color: #fff; }
 #footer-inner { background: #333; height: 100px; }
 
 
