@@ -114,12 +114,12 @@ $setting['sections']['header-tagline'] = array(
 
 //! Disable Tagline
 $setting[] = array(
-	'id'		=> 'header-disable-tagline',
+	'id'		=> 'disable-tagline',
 	'label'		=> 'Disable',
 	'section'	=> 'header-tagline',
 	'type'		=> 'checkbox',
 	'choices'	=> array(
-		'header-disable-tagline' => 'Disable tagline (site description)'
+		'disable-tagline' => 'Disable tagline (site description)'
 	)
 );
 

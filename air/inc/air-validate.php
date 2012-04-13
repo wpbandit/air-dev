@@ -40,6 +40,9 @@ class AirValidate extends AirBase {
 			case 'blog':
 				$valid = self::blog($input,$valid);
 				break;
+			case 'header':
+				$valid = self::header($input,$valid);
+				break;
 		}
 
 		# Check for errors
@@ -124,6 +127,11 @@ class AirValidate extends AirBase {
 			@private
 	**/
 	private static function header(array $input, $valid) {
+		# Custom Logo
+		$valid['custom-logo'] = esc_url($input['custom-logo']);
+		# Tagline
+		$valid['disable-tagline'] = isset($input['disable-tagline'])?'1':'0';
+
 		# Return validated options
 		return $valid;
 	}
