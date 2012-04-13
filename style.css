@@ -183,8 +183,8 @@ h1, h2, h3, h4, h5, h6 { color: #222; }
 #tagline { font-size: 13px;  }
 
 /* ---- header: navigation ---- */
-#nav-header { background: url(img/nav-header.png) repeat-x top; float: left; z-index: 9; position: absolute; bottom: 70px; width: 960px; }
-#nav { float: left; font-size: 14px; width: 740px; padding: 0 20px; }
+#nav-header { width: 960px; }
+#nav { float: left; font-size: 14px; }
 
 /* level 1 */
 #nav li { list-style: none; display: inline; float: left; position: relative; text-transform: uppercase; }
