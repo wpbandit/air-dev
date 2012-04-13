@@ -10,7 +10,7 @@
 
 		<div id="air-sidebar">
 			<ul id="air-menu">
-				<li class="air-menu-title">Theme Options Menu</li>
+				<li class="air-menu-title">Theme Modules Menu</li>
 				<?php Air::print_theme_options_menu(); ?>
 			</ul>
 		</div><!--/air-sidebar-->

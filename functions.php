@@ -11,9 +11,6 @@ $airconfig = array(
 	'theme_version'		=> '1.0',
 	'theme_options'		=> 'bandit_air',
 
-	//! Admin menu slug
-	'admin_menu_slug'	=> 'test-options',
-
 	//! Theme options menu
 	'theme_options_menu' => array(
 		'general'	=> 'General',
