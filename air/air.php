@@ -92,9 +92,6 @@ class Air extends AirBase {
 		self::$config = $airconfig;
 		unset($airconfig);
 
-		# Set menu slug
-		self::$menu_slug = self::get_config('admin_menu_slug')?self::$config['admin_menu_slug']:'air-options';
-
 		# Set option name
 		self::$option_name = self::get_config('theme_options')?self::$config['theme_options']:'air-options';
 
@@ -150,7 +147,7 @@ class Air extends AirBase {
 	static function admin_init() {
 		# Set page hooks
 		self::$hook = array();
-		self::$hook[] = get_plugin_page_hook(self::$menu_slug,'admin.php');
+		self::$hook[] = get_plugin_page_hook('theme-options','admin.php');
 
 		# Load validation library
 		require(AIR_PATH.'/inc/air-validate.php');
@@ -209,25 +206,37 @@ class Air extends AirBase {
 		$title = isset(self::$config['theme_name'])?self::$config['theme_name']:'Air Framework';
 
 		# Create top-level menu
-		add_menu_page($title,$title,'manage_options',self::$menu_slug,__CLASS__.'::admin_page');
+		add_menu_page($title,$title,'manage_options','theme-options',__CLASS__.'::admin_options_page');
 
-		# Create sub menu page
-		add_submenu_page(self::$menu_slug,'Theme Options','Theme Options',
-			'manage_options',self::$menu_slug,__CLASS__.'::admin_page');
-		/* create loop to autoadd subpages */
-		add_submenu_page(self::$menu_slug,'Test','Test','manage_options','test',__CLASS__.'::admin_page');
+		# Create sub menu pages
+		add_submenu_page('theme-options','Theme Options','Theme Options',
+			'manage_options','theme-options',__CLASS__.'::admin_options_page');
+		add_submenu_page('theme-options','Theme Modules','Theme Modules',
+			'manage_options','theme-modules',__CLASS__.'::admin_modules_page');
 	}
 
 	/**
-		Admin page
+		Admin options page
 			@public
 	**/
-	static function admin_page() {
+	static function admin_options_page() {
 		# Set section
 		$section = isset($_GET['section'])?esc_attr($_GET['section']):'general';
 
 		# Load options page
 		require(AIR_PATH.'/gui/air-options-page.php');
+	}
+
+	/**
+		Admin modules page
+			@public
+	**/
+	static function admin_modules_page() {
+		# Set section
+		$section = isset($_GET['section'])?esc_attr($_GET['section']):'general';
+
+		# Load options page
+		require(AIR_PATH.'/gui/air-modules-page.php');
 	}
 
 	/**
@@ -259,7 +268,7 @@ class Air extends AirBase {
 			$output = '';
 			foreach($menu as $key=>$value) {
 				# Set menu item url
-				$url = admin_url('/admin.php?page='.self::$menu_slug.'&section='.$key);
+				$url = admin_url('/admin.php?page='.'theme-options'.'&section='.$key);
 
 				# Set current class ?
 				$output .= ($current === $key)?'<li class="current">':'<li>'; 
