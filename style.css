@@ -169,14 +169,14 @@ h1, h2, h3, h4, h5, h6 { color: #222; }
  *  Topbar
 /* ------------------------------------------------------------------------- */
 #topbar { background: red; }
-#topbar-inner { height: 40px; }
+#topbar-inner { background: #000; height: 40px; }
 
 
 /* ------------------------------------------------------------------------- *
  *  Header
 /* ------------------------------------------------------------------------- */
 #header { background: orange; }
-#header-inner { height: 200px; }
+#header-inner { background: #111; height: 200px; }
 
 #logo { font-size: 36px; font-weight: 700; }
 #logo a {  }
@@ -228,7 +228,7 @@ h1, h2, h3, h4, h5, h6 { color: #222; }
  *  Content / UI
 /* ------------------------------------------------------------------------- */
 #content { background: yellow; }
-#content-inner { height: 200px; }
+#content-inner { background: #222; height: 200px; }
 
 
 /* ------------------------------------------------------------------------- *
@@ -315,7 +315,7 @@ a.more-link { font-weight: 600; }
  *  Page Template: Frontpage
 /* ------------------------------------------------------------------------- */
 #subcontent { background: purple; }
-#subcontent-inner { height: 100px; }
+#subcontent-inner { background: #333; height: 100px; }
 
 
 /* ------------------------------------------------------------------------- *
@@ -418,14 +418,14 @@ a.more-link { font-weight: 600; }
  *  Subfooter
 /* ------------------------------------------------------------------------- */
 #subfooter { background: lime; }
-#subfooter-inner { height: 100px; }
+#subfooter-inner { background: #444; height: 100px; }
 
 
 /* ------------------------------------------------------------------------- *
  *  Footer
 /* ------------------------------------------------------------------------- */
 #footer { background: green; }
-#footer-inner { height: 100px; }
+#footer-inner { background: #555; height: 100px; }
 
 
 /* ------------------------------------------------------------------------- *
