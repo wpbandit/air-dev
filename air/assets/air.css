@@ -11,7 +11,8 @@ label { cursor: auto; }
 .air-text { color: #777; line-height: 1.5em; }
 .air-text h3 { font-size: 14px; color: #444; font-weight: bold; border-bottom: 1px solid #eee; padding-bottom: 6px; margin-bottom: 10px; margin-top: 20px; }
 
-#air-save-notice { background: #ffffe0; border: 1px solid #e6db55; margin-top: 20px; padding: 0 14px; }
+#air-save-notice { background: #ffffe0; border: 1px solid #e6db55; margin-top: 20px; padding: 0 12px; }
+#air-save-notice p { margin: 8px 0; }
 
 
 /*-------------------------------------------------------------------------- */
