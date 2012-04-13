@@ -67,8 +67,9 @@ i.air-icon.air-icon-general { background-position: 0 -32px; }
 i.air-icon.air-icon-styling { background-position: 0 -48px; }
 i.air-icon.air-icon-header { background-position: 0 -64px; }
 i.air-icon.air-icon-footer { background-position: 0 -80px; }
-i.air-icon.air-icon-typography { background-position: 0 -96px; }
-i.air-icon.air-icon-blog { background-position: 0 -112px; }
+i.air-icon.air-icon-sidebar { background-position: 0 -96px; }
+i.air-icon.air-icon-typography { background-position: 0 -112px; }
+i.air-icon.air-icon-blog { background-position: 0 -128px; }
 
 
 /*-------------------------------------------------------------------------- */

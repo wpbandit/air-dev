@@ -19,6 +19,7 @@ $airconfig = array(
 		'general'	=> 'General Settings',
 		'blog'		=> 'Blog Options',
 		'header'	=> 'Header',
+		'sidebar'	=> 'Sidebar',
 		'footer'	=> 'Footer',
 		'styling'	=> 'Styling',
 		'typography'=> 'Typography',

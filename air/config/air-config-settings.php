@@ -299,6 +299,32 @@ $setting[] = array(
 	)
 );
 
+
+/*-------------------------------------------------------------------------- */
+/* Theme Settings :: Sidebar
+/*-------------------------------------------------------------------------- */
+
+/* Sidebar : Widgets
+/*---------------------------------------------------------*/
+$setting['sections']['post-details'] = array(
+	'title'		=> 'Separate Widget Areas',
+	'tab'		=> 'sidebar'
+);
+
+$setting[] = array(
+	'id'		=> 'post-hide-fields',
+	'label'		=> 'Enable for:',
+	'section'	=> 'post-details',
+	'type'		=> 'checkbox',
+	'choices'	=> array(
+		'sidebar-widget-single'	=> 'Blog Single',
+		'sidebar-widget-archive'=> 'Blog Archive',
+		'sidebar-widget-page'	=> 'Page',
+		'sidebar-widget-search'	=> 'Search',
+		'sidebar-widget-404'	=> '404',
+	)
+);
+
 /*-------------------------------------------------------------------------- */
 /* Theme Settings :: Styling
 /*-------------------------------------------------------------------------- */
