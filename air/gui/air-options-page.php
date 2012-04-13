@@ -28,9 +28,12 @@
 				<div id="air-main-inner" class="air-text">
 					<div class="air-section">
 						
+					<?php if(isset($_GET['settings-updated']) && ('true'===$_GET['settings-updated'])): ?>
 						<div id="air-save-notice">
-							<p>Settings have been saved.</p>
+							<p>Settings saved.</p>
 						</div>
+					<?php endif; ?>
+
 						<?php settings_fields('air-settings'); ?>
 						<?php do_settings_sections('air-'.$section); ?>				
 						<input type="hidden" name="<?php echo Air::$option_name; ?>[section]" value="<?php echo $section; ?>">
