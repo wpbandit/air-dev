@@ -8,7 +8,7 @@
 	compliance with the license. Any of the license terms and conditions
 	can be waived if you get permission from the copyright holder.
 
-	Copyright (c) 2011 WPBandit
+	Copyright (c) 2012 WPBandit
 	Jermaine Marée
 
 		@package AirForm
