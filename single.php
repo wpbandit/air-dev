@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 
 <div id="content">
-	<div id="content-inner" class="container-24">
-	
-		<?php get_template_part('_loop'); ?>
+	<div id="content-inner" class="container-24">	
+
+		<?php get_template_part('_loop-single'); ?>
 		
 		<?php get_sidebar(); ?>
 		
