@@ -1,6 +1,6 @@
 <?php while(have_posts()): the_post(); ?>
+
 <article id="entry-<?php the_ID(); ?>" <?php post_class('entry'); ?>>
-	<div class="entry-pike"></div>
 	<a class="format-icon" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><i class="icon"></i></a>
 	<!--<div class="entry-thumbnail">
 		<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
