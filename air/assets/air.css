@@ -4,6 +4,11 @@
 .air-clear { clear: both; } 
 .form-table th, .form-wrap label { color: #777; }
 .form-table th { width: 155px; }
+textarea, input { padding-top: 4px; padding-bottom: 4px; }
+
+.air-text { color: #777; line-height: 1.5em; }
+.air-text h3 { font-size: 14px; color: #444; font-weight: bold; border-bottom: 1px solid #eee; padding-bottom: 6px; margin-bottom: 10px; margin-top: 20px; }
+
 
 /*-------------------------------------------------------------------------- */
 /* Wrapper
@@ -69,8 +74,6 @@ i.air-icon.general-styling { background-position: 0 -48px; }
 #air-main-inner { padding: 0 20px 20px 20px; }
 
 .air-section { margin-bottom: 20px; }
-.air-text { color: #666; line-height: 1.5em; }
-.air-text h3 { font-size: 14px; color: #444; font-weight: bold; border-bottom: 1px solid #eee; padding-bottom: 6px; margin-bottom: 10px; margin-top: 20px; }
 .air-submit { padding: 0; }
 
 
