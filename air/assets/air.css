@@ -1,0 +1,90 @@
+/*-------------------------------------------------------------------------- */
+/* Common
+/*-------------------------------------------------------------------------- */
+.air-clear { clear: both; } 
+
+
+/*-------------------------------------------------------------------------- */
+/* Wrapper
+/*-------------------------------------------------------------------------- */
+#air-wrap { width: 827px; margin-top: 20px; font-family: Arial; font-size: 12px; line-height: 1.5em; border-radius: 10px; box-shadow: 3px 3px 5px rgba(0,0,0,0.05); }
+#air-wrap a { text-decoration: none; }
+
+
+/*-------------------------------------------------------------------------- */
+/* Header
+/*-------------------------------------------------------------------------- */
+#air-header { background: #6d6d6d url(img/air-header.png) repeat-x top; color: #fff; text-shadow: 0 1px 0 rgba(0,0,0,0.3); height: 70px; position: relative; border-bottom: 1px solid #444; border-right: 1px solid #555; border-left: 1px solid #555; 
+-moz-border-radius: 10px 10px 0 0; -webkit-border-radius: 10px 10px 0 0; border-radius: 10px 10px 0 0; }
+
+#air-header a#wpbandit-logo { background: url(img/wpbandit-logo.png) no-repeat 0 0; width: 200px; height: 32px; position: absolute; top: 21px; left: 20px; overflow: hidden; text-indent: -999px; }
+#air-header #air-theme-version { font-weight: bold; font-size: 18px; position: absolute; right: 20px; top: 17px; }
+#air-header #air-air-version { color: #ccc; position: absolute; right: 20px; bottom: 15px; }
+
+
+/*-------------------------------------------------------------------------- */
+/* Subheader
+/*-------------------------------------------------------------------------- */
+#air-subheader { background: #eaf2fa; text-shadow: 0 1px 0 #fff; height: 40px; border-top: 1px solid #fff; border-bottom: 1px solid #dde7f1; }
+
+ul#air-headmenu { float: right; font-size: 12px; font-weight: bold; text-transform: uppercase; margin: 0; }
+ul#air-headmenu li { list-style: none; float: left; margin: 0; }
+ul#air-headmenu li a { color: #21759b; display: block; line-height: 16px; padding: 12px 14px; border-left: 1px solid #dde7f1; 
+-moz-box-shadow: inset 1px 0 0 #fff; -webkit-box-shadow: inset 1px 0 0 #fff; box-shadow: inset 1px 0 0 #fff; }
+ul#air-headmenu li a:hover { color: #21759b; text-decoration: underline; } 
+
+
+/*-------------------------------------------------------------------------- */
+/* Main
+/*-------------------------------------------------------------------------- */
+#air-content { background: url(img/air-sidebar.png) repeat-y 0 0; border-left: 1px solid #d8d8d8; border-right: 1px solid #d8d8d8; border-bottom: 1px solid #d8d8d8; 
+-moz-border-radius: 0 0 10px 10px; -webkit-border-radius: 0 0 10px 10px; border-radius: 0 0 10px 10px; }
+
+
+/*-------------------------------------------------------------------------- */
+/* Sidebar
+/*-------------------------------------------------------------------------- */
+#air-sidebar { background: #f1f1f1; width: 190px; float: left; }
+
+ul#air-menu { font-family: Arial; font-weight: bold; text-shadow: 0 1px 0 #fff; margin: 0; }
+ul#air-menu li { list-style: none; margin: 0; }
+ul#air-menu li a { color: #777; display: block; line-height: 16px; padding: 12px 14px; border-top: 1px solid #f9f9f9; border-bottom: 1px solid #dfdfdf; border-right: 1px solid #d8d8d8; }
+ul#air-menu li a:hover { background: #eaeaea; color: #444; } 
+ul#air-menu li.current a { background: #fff; color: #21759b; border-right-color: #fff; }
+ul#air-menu li.air-menu-title { background: #e5e5e5; color: #999; text-transform: uppercase; font-size: 12px; line-height: 16px; padding: 12px 14px; border-top: 1px solid #f9f9f9; border-bottom: 1px solid #d8d8d8; border-right: 1px solid #d8d8d8; }
+
+i.air-icon { background: url(img/air-icons.png) no-repeat 0 0; width: 16px; height: 16px; float: left; margin-right: 6px; }
+i.air-icon.forums { background-position: 0 0; }
+i.air-icon.changelog { background-position: 0 -16px; }
+i.air-icon.general-settings { background-position: 0 -32px; }
+i.air-icon.general-styling { background-position: 0 -48px; }
+
+
+/*-------------------------------------------------------------------------- */
+/* Main
+/*-------------------------------------------------------------------------- */
+#air-main { background: #fff; width: 635px; float: left; min-height: 500px; padding-bottom: 60px; position: relative; 
+-moz-border-radius: 0 0 10px 0; -webkit-border-radius: 0 0 10px 0; border-radius: 0 0 10px 0;}
+#air-main-inner { padding: 20px; }
+
+.air-section { margin-bottom: 20px; }
+.air-text { color: #666; line-height: 1.5em; }
+.air-text h3 { font-size: 14px; color: #444; font-weight: bold; border-bottom: 1px solid #eee; padding-bottom: 6px; margin-bottom: 10px; }
+.air-submit { padding: 0; }
+
+
+/*-------------------------------------------------------------------------- */
+/* Fields
+/*-------------------------------------------------------------------------- */
+.air-halign-radio { margin-right: 15px }
+.air-colorpicker { background: url(img/colorpicker/select.png); float: left; position: relative; margin-top: -5px; margin-right: 10px; width: 36px; height: 36px; }
+.air-colorpicker div { background: url(img/colorpicker/select.png) center; position: absolute; top: 3px; left: 3px; width: 30px; height: 30px; }
+.colorpicker input { line-height: 10px; top:5px }
+
+
+/*-------------------------------------------------------------------------- */
+/* Footer
+/*-------------------------------------------------------------------------- */
+#air-footer { background: #fff url(img/air-footer.png) repeat-y right; width: 607px; height: 40px; padding: 10px 14px; border-top: 1px solid #f1f1f1; position: absolute; bottom: 0; 
+-moz-border-radius: 0 0 10px 0; -webkit-border-radius: 0 0 10px 0; border-radius: 0 0 10px 0; }
+#air-footer p { float: right; }
