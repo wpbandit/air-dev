@@ -56,9 +56,9 @@ ul#air-headmenu li a:hover { color: #21759b; text-decoration: underline; }
 ul#air-menu { font-family: Arial; font-weight: bold; text-shadow: 0 1px 0 #fff; margin: 0; }
 ul#air-menu li { list-style: none; margin: 0; }
 ul#air-menu li a { color: #777; display: block; line-height: 16px; padding: 12px 14px; border-top: 1px solid #f9f9f9; border-bottom: 1px solid #dfdfdf; border-right: 1px solid #d8d8d8; }
-ul#air-menu li a:hover { background: #eaeaea; color: #444; } 
+ul#air-menu li a:hover { background: #e4e4e4; color: #444; } 
 ul#air-menu li.current a { background: #fff; color: #21759b; border-right-color: #fff; }
-ul#air-menu li.air-menu-title { background: #e5e5e5; color: #999; text-transform: uppercase; font-size: 12px; line-height: 16px; padding: 12px 14px; border-top: 1px solid #f9f9f9; border-bottom: 1px solid #d8d8d8; border-right: 1px solid #d8d8d8; }
+ul#air-menu li.air-menu-title { background: #e4e4e4; color: #999; text-transform: uppercase; font-size: 12px; line-height: 16px; padding: 12px 14px; border-top: 1px solid #f9f9f9; border-bottom: 1px solid #d8d8d8; border-right: 1px solid #d8d8d8; }
 
 i.air-icon { background: url(img/air-icons.png) no-repeat 0 0; width: 16px; height: 16px; float: left; margin-right: 6px; }
 i.air-icon.forums { background-position: 0 0; }
