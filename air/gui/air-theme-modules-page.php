@@ -34,9 +34,7 @@
 						</div>
 					<?php endif; ?>
 
-						<?php settings_fields('air-settings'); ?>
-						<?php do_settings_sections('air-'.$section); ?>				
-						<input type="hidden" name="<?php echo Air::$option_name; ?>[section]" value="<?php echo $section; ?>">
+						<?php require(AIR_PATH.'/modules/'.$section.'/'.$section.'-options-page.php'); ?>
 						
 					</div>
 					<div class="air-clear"></div>

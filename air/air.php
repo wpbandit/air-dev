@@ -214,6 +214,8 @@ class Air extends AirBase {
 			'manage_options','theme-options',__CLASS__.'::admin_page');
 		add_submenu_page('theme-options','Theme Modules','Theme Modules',
 			'manage_options','theme-modules',__CLASS__.'::admin_page');
+		add_submenu_page('theme-options','WPBandit Themes','More Themes',
+			'manage_options','wpbandit-themes',__CLASS__.'::admin_page');
 	}
 
 	/**
