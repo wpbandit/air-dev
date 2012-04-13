@@ -26,8 +26,7 @@
 		<div class="grid-6">
 			<?php get_sidebar(); ?>
 		</div>
-		
-		<div class="clear"></div>
+	
 	</div><!--/content-inner-->
 </div><!--/content-->
 <?php get_footer(); ?>

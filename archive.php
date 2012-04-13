@@ -12,7 +12,6 @@
 			<?php get_sidebar(); ?>
 		</div>
 
-		<div class="clear"></div>
 	</div><!--/content-inner-->
 </div><!--/content-->
 

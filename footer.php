@@ -3,7 +3,6 @@
 		
 			<p>subfooter</p>
 			
-			<div class="clear"></div>
 		</div><!--/subfooter-inner-->
 	</div><!--/subfooter-->
 	
@@ -12,7 +11,6 @@
 		
 			<p>footer</p>
 			
-			<div class="clear"></div>
 		</div><!--/footer-inner-->	
 	</footer><!--/footer-->
 	
