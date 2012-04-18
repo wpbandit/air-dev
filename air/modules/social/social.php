@@ -103,7 +103,7 @@ class air_social extends AirBase {
 			$tmp['name'] = esc_attr($input['name']);
 			
 			# Icon
-			$split = self::$path.'/icons/';
+			$split = self::$url.'/icons/';
 			$icon = explode($split,esc_url($input['icon']));
 			$tmp['icon'] = isset($icon[1])?$icon[1]:esc_url($input['icon']);
 
