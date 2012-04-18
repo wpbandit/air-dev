@@ -169,7 +169,7 @@ class air_social extends AirBase {
 			# Loop through icons
 			foreach($icons as $icon) {
 				if($icon != "." && $icon != "..")
-					$output .= '<li><img src="'.self::$url.'/icons/default/'.$icon.'" alt="'.$icon.'" title="'.$icon.'" width="16" height="16" />';
+					$output .= '<li><img src="'.self::$url.'/icons/default/'.$icon.'" alt="'.$icon.'" title="'.$icon.'" />';
 			}
 			$output .= '</ul>';
 			# Return list
