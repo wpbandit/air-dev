@@ -24,28 +24,22 @@
 				</ul>
 			</div><!--/air-subheader-->
 
-			<form method="post" action="options.php">
-				<div id="air-main-inner" class="air-text">
-					<div class="air-section">
-						
-					<?php if(isset($_GET['settings-updated']) && ('true'===$_GET['settings-updated'])): ?>
-						<div id="air-save-notice">
-							<p>Settings saved.</p>
-						</div>
-					<?php endif; ?>
-
-						<?php require(AIR_PATH.'/modules/'.$section.'/'.$section.'-options-page.php'); ?>
-						
+			<div id="air-main-inner" class="air-text">
+				<div class="air-section">
+					
+				<?php if(isset($_GET['settings-updated']) && ('true'===$_GET['settings-updated'])): ?>
+					<div id="air-save-notice">
+						<p>Settings saved.</p>
 					</div>
-					<div class="air-clear"></div>
-				</div><!--/air-main-inner-->
-			
-				<div id="air-footer">
-					<p class="submit air-submit">
-						<input type="submit" class="button-primary" value="Save Changes" />
-					</p>
-				</div><!--/air-footer-->
-			</form>
+				<?php endif; ?>
+
+					<?php require(AIR_PATH.'/modules/'.$section.'/'.$section.'-options-page.php'); ?>
+					
+				</div>
+				<div class="air-clear"></div>
+			</div><!--/air-main-inner-->
+		
+		
 
 		</div><!--/air-main-->
 

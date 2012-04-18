@@ -22,8 +22,6 @@ class air_social extends AirBase {
 	protected static
 		//! Option Name
 		$option_name = 'air-social',
-		//! Hook
-		//$hook,
 		//! Option
 		$option,
 		//! URL
@@ -79,11 +77,72 @@ class air_social extends AirBase {
 	}
 
 	/**
+		Get variable
+			@public
+	**/
+	static function get_var($name=NULL) {
+		return isset(self::$$name)?self::$$name:FALSE;
+	}
+
+	/**
 		Validate settings
 			@public
 	**/
 	static function validate_settings($input) {
+		$action = esc_attr($input['action']);
 
+		if($action == 'new') {
+			# Get current options
+			$valid = get_option(self::$option_name);
+
+			# Any options exist?
+			if(!$valid) { $valid = array(); }
+
+			# Validate input
+			$tmp['url'] = esc_url($input['url']);
+			$tmp['name'] = esc_attr($input['name']);
+			
+			# Icon
+			$split = self::$path.'/icons/';
+			$icon = explode($split,esc_url($input['icon']));
+			$tmp['icon'] = isset($icon[1])?$icon[1]:esc_url($input['icon']);
+
+			# Add to array
+			$valid[] = $tmp;
+
+			# Return validated settings
+			return $valid;
+		}
+
+		if($action == 'update') {
+			# Unset action
+			unset($input['action']);
+			
+			# Create valid array
+			$valid = array();
+			
+			# Loop through items for update
+			foreach($input as $item) {
+				$item['url'] = esc_url($item['url']);
+				$item['name'] = esc_attr($item['name']);
+				
+				# Icon
+				if(substr($item['icon'],0,4)=='http') {
+					$item['icon'] = esc_url($item['icon']);
+				} else {
+					$item['icon'] = esc_attr($item['icon']);	
+				}
+
+				# Add to valid array
+				$valid[] = $item;
+				
+				# Unset item
+				unset($item);
+			}
+
+			# Return validated settings
+			return $valid;
+		}
 	}
 
 	/**
@@ -116,6 +175,28 @@ class air_social extends AirBase {
 			# Return list
 			return $output;
 		}
+	}
+
+	/**
+		Get items
+			@public
+	**/
+	static function get_items() {
+		# Get items and set URL
+		$options = self::$option;
+		$url = self::$url.'/icons';
+
+		# Loop through items
+		if(is_array($options)) {
+			foreach($options as $key=>$item) {
+				$options[$key]['icon_input'] = $options[$key]['icon'];
+				# Icon
+				if(substr($options[$key]['icon'],0,4) != 'http') {
+					$options[$key]['icon'] = $url.'/'.$options[$key]['icon'];
+				}
+			}
+		}
+		return $options;
 	}
 
 }

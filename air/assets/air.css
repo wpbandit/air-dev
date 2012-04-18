@@ -84,6 +84,7 @@ i.air-icon.air-icon-blog { background-position: 0 -128px; }
 #air-main-inner { padding: 0 20px 20px 20px; }
 
 .air-module-container { padding: 20px 0; }
+.air-module-inner-container { clear: both; overflow: auto; }
 
 .air-section { margin-bottom: 20px; }
 .air-submit { padding: 0; margin: 6px 0; }
@@ -92,6 +93,7 @@ i.air-icon.air-icon-blog { background-position: 0 -128px; }
 /*-------------------------------------------------------------------------- */
 /* Fields
 /*-------------------------------------------------------------------------- */
+input.air-error { border: 1px solid red; }
 .air-halign-radio { margin-right: 15px }
 .air-colorpicker { background: url(img/colorpicker/select.png); float: left; position: relative; margin-top: -5px; margin-right: 10px; width: 36px; height: 36px; }
 .air-colorpicker div { background: url(img/colorpicker/select.png) center; position: absolute; top: 3px; left: 3px; width: 30px; height: 30px; }
@@ -112,14 +114,20 @@ i.air-icon.air-icon-blog { background-position: 0 -128px; }
 .air-icons-box { background: #efefef; border:1px solid #ddd; float: left; padding: 10px; width: 290px; border-radius: 4px; -webkit-border-radius:4px; -moz-border-radius: 4px; }
 .air-icons-box h3 { border-bottom: 1px solid #ccc; margin-top: 0; }
 
-#air-icon-tabs li.ui-state-active { background: white; border-color: #DFDFDF; border-style: solid solid none; border-width: 1px 1px 0; }
-#air-icon-tabs .ui-tabs-panel { background: white; border: 1px solid #DFDFDF; margin-bottom: 8px; overflow: auto; }
+#air-icons-tabs .ui-state-active { background: white; border-color: #DFDFDF; border-style: solid solid none; border-width: 1px 1px 0; }
+#air-icons-tabs .ui-tabs-panel { background: white; border: 1px solid #DFDFDF; margin-bottom: 8px; overflow: auto; }
 
 ul.air-icon-tab { margin: 0; }
 ul.air-icon-tab li { display: inline; margin: 0; padding: 2px; }
 
+
+/*-------------------------------------------------------------------------- */
+/* Social Module
+/*-------------------------------------------------------------------------- */
 .air-social-icons li { float:left; height: 35px; margin-bottom: 0; text-align: center; width:35px; }
 .air-social-icons li:hover { cursor: pointer; }
+
+#air-social-content { clear: both; margin-top: 30px; }
 
 
 
