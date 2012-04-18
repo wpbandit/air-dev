@@ -59,4 +59,13 @@ jQuery(document).ready(function($) {
 		}
 	});
 
+	// Remove link
+	$('a.air-link-delete').click(function(){
+		if( confirm('Are you sure you want to remove this item?')) {
+			var tr = $(this).parent().parent('tr');
+			tr.remove();
+			return false;
+		}
+	});
+
 });
