@@ -108,6 +108,9 @@ class Air extends AirBase {
 			add_action('admin_menu',__CLASS__.'::admin_menu');
 		}
 
+		# Initialize modules
+		self::modules_init();
+		
 		# Set content width
 		global $content_width;
 		if(!isset($content_width) && isset(self::$config['content_width'])) {
@@ -137,6 +140,23 @@ class Air extends AirBase {
 		# Shortcodes
 		if(is_file(AIR_PATH.'/air-shortcodes.php')) {
 			require(AIR_PATH.'/air-shortcodes.php');
+		}
+	}
+
+	/**
+		Modules init
+			@private
+	**/
+	static function modules_init() {
+		$modules = self::get_config('theme-modules-menu');
+		if($modules) {
+			foreach ($modules as $key=>$value) {
+				$module = AIR_PATH.'/modules/'.$key.'/'.$key.'.php';
+				if(is_file($module)) {
+					require($module);
+					call_user_func(array('air_'.$key,'init'));
+				}
+			}
 		}
 	}
 
