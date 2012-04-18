@@ -83,6 +83,8 @@ i.air-icon.air-icon-blog { background-position: 0 -128px; }
 -moz-border-radius: 0 0 10px 0; -webkit-border-radius: 0 0 10px 0; border-radius: 0 0 10px 0;}
 #air-main-inner { padding: 0 20px 20px 20px; }
 
+.air-module-container { padding: 20px 0; }
+
 .air-section { margin-bottom: 20px; }
 .air-submit { padding: 0; margin: 6px 0; }
 
@@ -94,6 +96,21 @@ i.air-icon.air-icon-blog { background-position: 0 -128px; }
 .air-colorpicker { background: url(img/colorpicker/select.png); float: left; position: relative; margin-top: -5px; margin-right: 10px; width: 36px; height: 36px; }
 .air-colorpicker div { background: url(img/colorpicker/select.png) center; position: absolute; top: 3px; left: 3px; width: 30px; height: 30px; }
 .colorpicker input { line-height: 10px; top:5px }
+
+
+/*-------------------------------------------------------------------------- */
+/* Form Box
+/*-------------------------------------------------------------------------- */
+.air-form-box { background: #efefef; border:1px solid #ddd; float: left; padding: 10px; margin-right: 15px; width:290px; border-radius: 4px; -webkit-border-radius:4px; -moz-border-radius: 4px; }
+.air-form-box h3 { border-bottom: 1px solid #ccc; margin-top: 0; }
+.air-form-box label { display: block; font-size: 95%; font-weight: bold; width: 100%; }
+
+
+/*-------------------------------------------------------------------------- */
+/* Icon Box
+/*-------------------------------------------------------------------------- */
+.air-icons-box { background: #efefef; border:1px solid #ddd; float: left; padding: 10px; width: 290px; border-radius: 4px; -webkit-border-radius:4px; -moz-border-radius: 4px; }
+.air-icons-box h3 { border-bottom: 1px solid #ccc; margin-top: 0; }
 
 
 /*-------------------------------------------------------------------------- */
