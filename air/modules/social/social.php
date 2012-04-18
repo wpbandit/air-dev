@@ -91,6 +91,7 @@ class air_social extends AirBase {
 	static function validate_settings($input) {
 		$action = esc_attr($input['action']);
 
+		# Add new icon
 		if($action == 'new') {
 			# Get current options
 			$valid = get_option(self::$option_name);
@@ -114,6 +115,7 @@ class air_social extends AirBase {
 			return $valid;
 		}
 
+		# Update current icons
 		if($action == 'update') {
 			# Unset action
 			unset($input['action']);
@@ -157,10 +159,10 @@ class air_social extends AirBase {
 	}
 
 	/**
-		Default icon list
+		Get icon list
 			@public
 	**/
-	static function default_icon_list() {
+	static function get_icon_list($folder='default') {
 		# Get icons
 		$icons = self::get_icons();
 		# Build list
@@ -169,7 +171,7 @@ class air_social extends AirBase {
 			# Loop through icons
 			foreach($icons as $icon) {
 				if($icon != "." && $icon != "..")
-					$output .= '<li><img src="'.self::$url.'/icons/default/'.$icon.'" alt="'.$icon.'" title="'.$icon.'" />';
+					$output .= '<li><img src="'.self::$url.'/icons/'.$folder.'/'.$icon.'" alt="'.$icon.'" title="'.$icon.'" />';
 			}
 			$output .= '</ul>';
 			# Return list

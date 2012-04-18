@@ -46,7 +46,7 @@ $url = air_social::get_var('url');
 				</ul>
 				
 				<div id="air-default-icons">
-					<?php echo air_social::default_icon_list(); ?>
+					<?php echo air_social::get_icon_list('default'); ?>
 					<p class="air-icons-credit">Social Network Icon Pack by <a href="http://www.komodomedia.com" target="_blank">Komodo Media</a></p>
 				</div>
 			</div>
