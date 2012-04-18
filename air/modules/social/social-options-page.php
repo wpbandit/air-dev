@@ -1,3 +1,5 @@
+<?php require 'social.php'; ?>
+
 <div id="bandit-social" class="air-module-container">
 
 <div class="air-form-box">
@@ -24,7 +26,7 @@
 <div class="air-icons-box">
 	<h3>Icons</h3>
 
-	<p>icons go here</p>
+	<?php echo air_social::default_icon_list(); ?>
 </div>
 
 </div><!-- end .air-module-container -->

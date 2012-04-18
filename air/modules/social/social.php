@@ -26,4 +26,41 @@ class air_social extends AirBase {
 
 	}
 
+	/**
+		Get icons
+			@public
+	**/
+	static function get_icons($folder='default') {
+		$path = get_template_directory().'/air/modules/social/';
+		// Get images
+		$icons = scandir($path.'icons/'.$folder);
+		// Return images
+		if($icons)
+			return $icons;
+		else
+			return FALSE;
+	}
+
+	/**
+		Default icon list
+			@public
+	**/
+	static function default_icon_list() {
+		$url = get_template_directory_uri().'/air/modules/social/';
+		// Get icons
+		$icons = self::get_icons();
+		// Build list
+		if($icons) {
+			$output = '<ul class="air-social-icons">';
+			// Loop through icons
+			foreach($icons as $icon) {
+				if($icon != "." && $icon != "..")
+					$output .= '<li><img src="'.$url.'icons/default/'.$icon.'" alt="'.$icon.'" title="'.$icon.'" width="16" height="16" />';
+			}
+			$output .= '</ul>';
+			// Return list
+			return $output;
+		}
+	}
+
 }
