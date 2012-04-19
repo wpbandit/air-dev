@@ -419,6 +419,15 @@ class Air extends AirBase {
 			@public
 	**/
 	static function wp_head() {
+		# Style
+		$style = self::get_option('style');
+		if($style)
+			echo '<link rel="stylesheet" href="'.get_template_directory_uri().'/styles/'.$style.'">'."\n";
+
+		# Custom CSS
+		if(self::get_option('custom-css'))
+			echo '<link rel="stylesheet" href="'.get_template_directory_uri().'/style-custom.css">'."\n";
+
 		# Favicon
 		if(self::get_option('favicon'))
 			echo '<link rel="shortcut icon" href="'.self::$option['favicon'].'">'."\n";
