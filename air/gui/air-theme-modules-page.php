@@ -34,12 +34,6 @@
 				<?php endif; ?>
 
 					<?php require(AIR_PATH.'/modules/'.$section.'/'.$section.'-options-page.php'); ?>
-					
-				</div>
-				<div class="air-clear"></div>
-			</div><!--/air-main-inner-->
-		
-		
 
 		</div><!--/air-main-->
 
