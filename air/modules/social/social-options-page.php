@@ -6,6 +6,9 @@ $option = air_social::get_var('option_name');
 //! Set url
 $url = air_social::get_var('url');
 
+//! Get items
+$items = air_social::get_items();
+
 ?>
 
 <div id="air-social" class="air-module-container">
@@ -61,12 +64,12 @@ $url = air_social::get_var('url');
 	
 	</div><!-- end air-module-inner-container -->
 
+<?php if($items): ?>
+
+<form action="options.php" method="post">
+<?php settings_fields($option.'-settings'); ?>
 	<div id="air-social-content">
-	<?php if(air_social::get_items()): ?>
-	<?php $items = air_social::get_items(); ?>
 		<div>
-			<form action="options.php" method="post">
-			<?php settings_fields($option.'-settings'); ?>
 			<table class="air-table" cellpadding="0" cellspacing="0">
 				<thead>
 					<tr>
@@ -98,33 +101,39 @@ $url = air_social::get_var('url');
 				</tbody>
 				<tfoot>
 					<tr>
-						<td colspan="2">
-							<input type="hidden" name="<?php echo $option; ?>[action]" value="update" />
-							<input type="submit" id="air-social-update" class="button-primary" value="Update" />
-						</td>
-						<td colspan="2">
+						<td colspan="4">
 							<p class="bandit-credit">Module inspired by <a href="http://shakenandstirredweb.com/plugins/social-bartender/" target="_blank">Sawyer Hollenshead</a></p>
 						</td>
 					</tr>
 				</tfoot>
 			</table>
-			</form>
 		</div>
-	<?php else: ?>
+	</div>
+
+
+<?php else: ?>
+
+	<div id="air-social-content">
 		<div class="empty-message">
 			<p><?php _e('You have not created any items.'); ?></p>
 		</div>
-	<?php endif; ?>
 	</div>
+
+<?php endif; ?>
+	
 
 </div><!-- end .air-module-container -->
 
 </div>
 <div class="air-clear"></div>
 </div><!--/air-main-inner-->
-			
+
+<?php if($items): ?>
 <div id="air-footer">
 	<p class="submit air-submit">
+		<input type="hidden" name="<?php echo $option; ?>[action]" value="update" />
 		<input type="submit" class="button-primary" value="Save Changes" />
 	</p>
 </div><!--/air-footer-->
+</form>
+<?php endif; ?>
