@@ -105,7 +105,6 @@ class Air extends AirBase {
 			require(AIR_PATH.'/inc/air-config.php');
 		}
 
-
 		# Admin
 		if(is_admin()) {
 			# Admin init
