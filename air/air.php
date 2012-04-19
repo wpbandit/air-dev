@@ -144,23 +144,6 @@ class Air extends AirBase {
 	}
 
 	/**
-		Modules init
-			@private
-	**/
-	static function modules_init() {
-		$modules = self::get_config('theme-modules-menu');
-		if($modules) {
-			foreach ($modules as $key=>$value) {
-				$module = AIR_PATH.'/modules/'.$key.'/'.$key.'.php';
-				if(is_file($module)) {
-					require($module);
-					call_user_func(array('air_'.$key,'init'));
-				}
-			}
-		}
-	}
-
-	/**
 		Admin init
 			@public
 	**/
@@ -247,7 +230,12 @@ class Air extends AirBase {
 		$page = esc_attr($_GET['page']);
 
 		# Set section
-		$section = isset($_GET['section'])?esc_attr($_GET['section']):'general';
+		if('theme-options' === $page) {
+			$section = isset($_GET['section'])?esc_attr($_GET['section']):'general';
+		} else {
+			$section = isset($_GET['section'])?esc_attr($_GET['section']):'social';
+		}
+
 
 		# Load options page
 		require(AIR_PATH.'/gui/air-'.$page.'-page.php');
@@ -296,6 +284,23 @@ class Air extends AirBase {
 
 			# Print menu
 			echo $output;
+		}
+	}
+
+	/**
+		Modules init
+			@private
+	**/
+	static function modules_init() {
+		$modules = self::get_config('theme-modules-menu');
+		if($modules) {
+			foreach ($modules as $key=>$value) {
+				$module = AIR_PATH.'/modules/'.$key.'/'.$key.'.php';
+				if(is_file($module)) {
+					require($module);
+					call_user_func(array('air_'.$key,'init'));
+				}
+			}
 		}
 	}
 
