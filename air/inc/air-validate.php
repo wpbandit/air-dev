@@ -43,6 +43,9 @@ class AirValidate extends AirBase {
 			case 'header':
 				$valid = self::header($input,$valid);
 				break;
+			case 'sidebar':
+				$valid = self::sidebar($input,$valid);
+				break;
 			case 'footer':
 				$valid = self::footer($input,$valid);
 				break;
@@ -150,6 +153,18 @@ class AirValidate extends AirBase {
 			@private
 	**/
 	private static function sidebar(array $input, $valid) {
+		# Single
+		$valid['sidebar-widget-single'] = isset($input['sidebar-widget-single'])?'1':'0';
+		# Archive
+		$valid['sidebar-widget-archive'] = isset($input['sidebar-widget-archive'])?'1':'0';
+		# Page
+		$valid['sidebar-widget-page'] = isset($input['sidebar-widget-page'])?'1':'0';
+		# Search
+		$valid['sidebar-widget-search'] = isset($input['sidebar-widget-search'])?'1':'0';
+		# 404
+		$valid['sidebar-widget-404'] = isset($input['sidebar-widget-404'])?'1':'0';
+
+
 		# Return validated options
 		return $valid;
 	}
