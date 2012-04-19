@@ -146,7 +146,8 @@ ul.air-social-icons:after { content:''; display: block; height: 0; clear: both; 
 
 #air-social-content { clear: both; margin-top: 20px; }
 .air-social-table { width: 100%; border: 1px solid #dfdfdf; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
-.air-social-table thead th { color: #444; padding: 8px 10px; text-align: left; border-bottom: 1px solid #dfdfdf; }
+.air-social-table thead th { color: #444; padding: 8px 0; text-align: left; border-bottom: 1px solid #dfdfdf; }
+.air-social-table thead th.icon { padding-left: 10px; }
 .air-social-table tr { padding: 10px 0; }
 .air-social-table td { background: #fcfcfc; border-bottom: 1px solid #eee; padding: 15px 0;  }
 .air-social-table td.icon img { margin: 5px 10px; float: left; }
