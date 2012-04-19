@@ -67,7 +67,7 @@ $url = air_social::get_var('url');
 		<div>
 			<form action="options.php" method="post">
 			<?php settings_fields($option.'-settings'); ?>
-			<table class="air-table air-social" cellpadding="0" cellspacing="0">
+			<table class="air-table" cellpadding="0" cellspacing="0">
 				<thead>
 					<tr>
 						<th class="icon">Icon</th>

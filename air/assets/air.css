@@ -116,18 +116,17 @@ input.air-error { border: 1px solid red; }
 -moz-box-shadow: inset 0 1px 0 #fff; -webkit-box-shadow: inset 0 1px 0 #fff; box-shadow: inset 0 1px 0 #fff;  }
 .air-box-head h3 { font-size: 12px; padding: 8px 10px; border-bottom: 1px solid #dfdfdf; margin: 0; }
 .air-box-inner { padding: 10px; }
-.air-box label { display: block; font-weight: bold; width: 100%; }
-
-.air-icons-credit { font-size: 11px; color: #aaa; padding: 10px; margin: 0; border-top: 1px solid #f1f1f1; }
-.air-icons-credit a { color: #aaa; text-decoration: underline!important; }
-.air-icons-credit a:hover { text-decoration: none!important; }
+.air-box label { display: block; width: 100%; }
 
 /* form box */
 .air-box.first { margin-right: 20px; }
 #air-social-submit { margin-left: 0; margin-bottom: 4px; }
 
 /* icon box */
-.air-box.second {  }
+.air-icons-credit { font-size: 11px; color: #aaa; padding: 10px; margin: 0; border-top: 1px solid #f1f1f1; }
+.air-icons-credit a { color: #aaa; text-decoration: underline!important; }
+.air-icons-credit a:hover { text-decoration: none!important; }
+
 
 /* icon list */
 ul.air-social-icons { margin-bottom: 0; }
