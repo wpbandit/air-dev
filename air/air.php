@@ -105,6 +105,11 @@ class Air extends AirBase {
 			require(AIR_PATH.'/inc/air-config.php');
 		}
 
+		# Load theme library
+		if(is_file(AIR_PATH.'/air-theme.php')) {
+			require(AIR_PATH.'/air-theme.php');
+		}
+
 		# Admin
 		if(is_admin()) {
 			# Admin init
