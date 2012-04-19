@@ -100,6 +100,12 @@ class Air extends AirBase {
 			self::$option = get_option(self::$config['theme_options']);
 		}
 
+		# Load configuration library
+		if(is_file(AIR_PATH.'/inc/air-config.php')) {
+			require(AIR_PATH.'/inc/air-config.php');
+		}
+
+
 		# Admin
 		if(is_admin()) {
 			# Admin init
