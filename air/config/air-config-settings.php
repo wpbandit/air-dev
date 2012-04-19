@@ -21,6 +21,25 @@ $setting[] = array(
 	'choices'	=> Air::get_theme_styles()
 );
 
+/* General : Custom Stylesheet
+/*---------------------------------------------------------------------------*/
+
+$setting['sections']['custom-css'] = array(
+	'title'		=> 'Custom Stylesheet',
+	'tab'		=> 'general'
+);
+
+//! Enable
+$setting[] = array(
+	'id'		=> 'custom-css',
+	'label'		=> 'Enable',
+	'section'	=> 'custom-css',
+	'type'		=> 'checkbox',
+	'choices'	=> array(
+		'custom-css' => 'Enable custom stylesheet [ <strong>style-custom.css</strong> ]',
+	)
+);
+
 /* General : Favicon
 /*---------------------------------------------------------*/
 
