@@ -120,13 +120,13 @@ $items = air_social::get_items();
 	</div>
 
 <?php endif; ?>
-	
-
 </div><!-- end .air-module-container -->
+
 
 </div>
 <div class="air-clear"></div>
 </div><!--/air-main-inner-->
+
 
 <?php if($items): ?>
 <div id="air-footer">
