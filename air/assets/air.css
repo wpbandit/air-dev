@@ -110,21 +110,22 @@ input.air-error { border: 1px solid red; }
 
 .air-module-inner-container { border-bottom: 1px solid #f1f1f1; padding-bottom: 20px; }
 
-/* boxes */
-.air-form-box,
-.air-icons-box { background: #f1f1f1; border: 1px solid #dfdfdf; float: left; padding: 10px; width: 288px; min-height: 255px; 
+/* box */
+.air-box { background: #f4f4f4; border: 1px solid #dfdfdf; float: left; width: 308px; min-height: 255px; 
 -moz-box-shadow: inset 0 1px 0 #fff; -webkit-box-shadow: inset 0 1px 0 #fff; box-shadow: inset 0 1px 0 #fff; }
+.air-box-head {  }
+.air-box-head h3 { font-size: 12px; padding: 8px 10px; border-bottom: 1px solid #dfdfdf; margin: 0; }
+.air-box-inner { padding: 10px; }
+.air-box label { display: block; font-weight: bold; width: 100%; }
+
+.air-icons-credit { font-size: 11px; color: #999; padding: 10px; margin: 0; border-top: 1px solid #f1f1f1; }
 
 /* form box */
-.air-form-box { margin-right: 20px; }
-.air-form-box h3 { border-bottom: 1px solid #dfdfdf; margin-top: 0; }
-.air-form-box label { display: block; font-weight: bold; width: 100%; }
-#air-social-submit { margin-left: 0; }
+.air-box.first { margin-right: 20px; }
+#air-social-submit { margin-left: 0; margin-bottom: 4px; }
 
 /* icon box */
-.air-icons-box {  }
-.air-icons-box h3 { border-bottom: 1px solid #dfdfdf; margin-top: 0; }
-.air-icons-credit { font-size: 11px; color: #999; padding: 10px; margin: 0; border-top: 1px solid #f1f1f1; }
+.air-box.second {  }
 
 /* icon list */
 ul.air-social-icons { margin-bottom: 0; }
@@ -134,18 +135,23 @@ ul.air-social-icons:after { content:''; display: block; height: 0; clear: both; 
 #air-icons-tabs ul.air-icon-tab { margin: 0; }
 #air-icons-tabs ul.air-icon-tab li { display: inline; margin: 0; padding: 3px 6px; }
 #air-icons-tabs .ui-state-active { background: #fff; border-color: #dfdfdf; border-style: solid solid none; border-width: 1px 1px 0; }
-#air-icons-tabs .ui-tabs-panel { background: #fff; border: 1px solid #dfdfdf; margin-bottom: 8px; overflow: auto; }
+#air-icons-tabs .ui-tabs-panel { background: #fff; border: 1px solid #dfdfdf; overflow: auto; }
 
 /* table */
-.air-social-icons li { float:left; height: 35px; margin-bottom: 0; text-align: center; width:35px; }
+.air-social-icons { padding: 6px 6px 0 6px; }
+.air-social-icons li { float:left; height: 34px; margin-bottom: 0; text-align: center; width:34px; }
 .air-social-icons li:hover { cursor: pointer; }
 
 #air-social-content { clear: both; margin-top: 20px; }
-.air-social-table { width: 100%; }
-.air-social-table thead { background: #eaf2fa; color: #21759b; }
-.air-social-table thead th { padding: 6px 10px; text-align: left; border-bottom: 1px solid #dde7f1; }
+.air-social-table { width: 100%; border: 1px solid #dfdfdf; }
+.air-social-table thead th { color: #444; padding: 8px 10px; text-align: left; border-bottom: 1px solid #dfdfdf; }
 .air-social-table tr { padding: 10px 0; }
-.air-social-table td { background: #fff; border-bottom: 1px solid #f1f1f1; padding: 15px 0;  }
+.air-social-table td { background: #fcfcfc; border-bottom: 1px solid #eee; padding: 15px 0;  }
+.air-social-table td.icon img { margin: 5px 10px; float: left; }
+.air-social-table tfoot td { border-bottom: 0; }
+.air-social-table tfoot input { margin-left: 20px; }
+.air-social-table tfoot p { margin: 0; }
+.air-social-table tfoot p.bandit-credit { font-size: 11px; color: #999; text-align: right; margin-right: 20px; }
 .air-social-table a.air-link-move,
 .air-social-table a.air-link-delete { width: 28px; height: 28px; float: left; display: block; }
 .air-social-table a.air-link-move:hover,
@@ -160,3 +166,17 @@ ul.air-social-icons:after { content:''; display: block; height: 0; clear: both; 
 #air-footer { background: #fff url(img/air-footer.png) repeat-y right; width: 652px; height: 40px; padding: 10px 14px; border-top: 1px solid #f1f1f1; position: absolute; bottom: 0; 
 -moz-border-radius: 0 0 10px 0; -webkit-border-radius: 0 0 10px 0; border-radius: 0 0 10px 0; }
 #air-footer p { float: right; }
+
+
+/*-------------------------------------------------------------------------- */
+/* Browser Gradients
+/*-------------------------------------------------------------------------- */
+.air-box-head,
+.air-social-table thead { background-color: #f1f1f1; text-shadow: 0 1px 0 #fff;
+background-image:-ms-linear-gradient(top,#f9f9f9,#ececec);
+background-image:-moz-linear-gradient(top,#f9f9f9,#ececec);
+background-image:-o-linear-gradient(top,#f9f9f9,#ececec);
+background-image:-webkit-gradient(linear,left top,left bottom,from(#f9f9f9),to(#ececec));
+background-image:-webkit-linear-gradient(top,#f9f9f9,#ececec);
+background-image:linear-gradient(top,#f9f9f9,#ececec);
+-moz-box-shadow: inset 0 1px 0 #fff, 0 1px 0 #fff; -webkit-box-shadow: inset 0 1px 0 #fff, 0 1px 0 #fff; box-shadow: inset 0 1px 0 #fff, 0 1px 0 #fff; }

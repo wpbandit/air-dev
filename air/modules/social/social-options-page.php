@@ -11,46 +11,54 @@ $url = air_social::get_var('url');
 <div id="air-social" class="air-module-container">
 
 	<div class="air-module-inner-container">
-		<div class="air-form-box">
+		
+		<div class="air-box first">
 			<form method="post" action="options.php">
 				<?php settings_fields($option.'-settings'); ?>
-
-				<h3>Create New Item</h3>
-
-				<p>
-					<label for="social-item-url"><span>URL</span></label>
-					<input id="social-item-url" name="<?php echo $option; ?>[url]" type="text" class="large-text" value="http://">
-				</p>
-						
-				<p>
-					<label for="social-item-name"><span>Label</span></label>
-					<input id="social-item-name" name="<?php echo $option; ?>[name]" type="text" class="large-text">
-				</p>
-
-				<p>
-					<label for="custom-menu-item"><span>Icon URL</span></label>
-					<input id="social-item-icon" name="<?php echo $option; ?>[icon]" type="text" class="large-text">
-				</p>
-
-				<input type="hidden" name="<?php echo $option; ?>[action]" value="new" />
-				<input type="submit" id="air-social-submit" class="button-secondary" value="Add Item">
-			</form>
-		</div>
-
-		<div class="air-icons-box">
-			<h3>Icons</h3>
-
-			<div id="air-icons-tabs">
-				<ul class="air-icon-tab">
-					<li><a class="air-icon-tab-link" href="#air-default-icons">Default</a></li>
-				</ul>
 				
-				<div id="air-default-icons">
-					<?php echo air_social::get_icon_list('default'); ?>
-					<p class="air-icons-credit">Social Network Icon Pack by <a href="http://www.komodomedia.com" target="_blank">Komodo Media</a></p>
+				<div class="air-box-head">
+					<h3>Create New Item</h3>		
+				</div>
+				<div class="air-box-inner">
+					<p>
+						<label for="social-item-url"><span>URL</span></label>
+						<input id="social-item-url" name="<?php echo $option; ?>[url]" type="text" class="large-text" value="http://">
+					</p>
+							
+					<p>
+						<label for="social-item-name"><span>Label</span></label>
+						<input id="social-item-name" name="<?php echo $option; ?>[name]" type="text" class="large-text">
+					</p>
+
+					<p>
+						<label for="custom-menu-item"><span>Icon URL</span></label>
+						<input id="social-item-icon" name="<?php echo $option; ?>[icon]" type="text" class="large-text">
+					</p>
+
+					<input type="hidden" name="<?php echo $option; ?>[action]" value="new" />
+					<input type="submit" id="air-social-submit" class="button-secondary" value="Add Item">
+				</div>
+			</form>
+		</div><!--/air-box-->
+
+		<div class="air-box second">
+			<div class="air-box-head">
+				<h3>Icons</h3>
+			</div>
+			<div class="air-box-inner">
+				<div id="air-icons-tabs">
+					<ul class="air-icon-tab">
+						<li><a class="air-icon-tab-link" href="#air-default-icons">Default</a></li>
+					</ul>
+					
+					<div id="air-default-icons">
+						<?php echo air_social::get_icon_list('default'); ?>
+						<p class="air-icons-credit">Social Network Icon Pack by <a href="http://www.komodomedia.com" target="_blank">Komodo Media</a></p>
+					</div>
 				</div>
 			</div>
-		</div>
+		</div><!--/air-box-->
+	
 	</div><!-- end air-module-inner-container -->
 
 	<div id="air-social-content">
