@@ -29,7 +29,7 @@ class AirValidate extends AirBase {
 		$valid = self::$option;
 
 		# Get section
-		$section = esc_attr($input['section']);
+		$section = isset($input['section'])?esc_attr($input['section']):'general';
 		unset($input['section']);
 
 		# Validate section
