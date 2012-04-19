@@ -73,6 +73,9 @@ class air_social extends AirBase {
 		if(isset($_GET['section']) && ('social'==$_GET['section'])) {
 			wp_enqueue_script('air-social',self::$url.'/social.js', 
 				array('jquery','jquery-ui-core','jquery-ui-sortable','jquery-ui-tabs'));
+		} elseif(('theme-modules'==$_GET['page']) && !isset($_GET['section'])) {
+			wp_enqueue_script('air-social',self::$url.'/social.js', 
+				array('jquery','jquery-ui-core','jquery-ui-sortable','jquery-ui-tabs'));
 		}
 	}
 
