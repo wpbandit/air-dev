@@ -118,7 +118,9 @@ input.air-error { border: 1px solid red; }
 .air-box-inner { padding: 10px; }
 .air-box label { display: block; font-weight: bold; width: 100%; }
 
-.air-icons-credit { font-size: 11px; color: #999; padding: 10px; margin: 0; border-top: 1px solid #f1f1f1; }
+.air-icons-credit { font-size: 11px; color: #aaa; padding: 10px; margin: 0; border-top: 1px solid #f1f1f1; }
+.air-icons-credit a { color: #aaa; text-decoration: underline!important; }
+.air-icons-credit a:hover { text-decoration: none!important; }
 
 /* form box */
 .air-box.first { margin-right: 20px; }
@@ -148,10 +150,12 @@ ul.air-social-icons:after { content:''; display: block; height: 0; clear: both; 
 .air-social-table tr { padding: 10px 0; }
 .air-social-table td { background: #fcfcfc; border-bottom: 1px solid #eee; padding: 15px 0;  }
 .air-social-table td.icon img { margin: 5px 10px; float: left; }
-.air-social-table tfoot td { border-bottom: 0; }
-.air-social-table tfoot input { margin-left: 20px; }
+.air-social-table tfoot td { border-bottom: 0; padding: 10px 0; }
+.air-social-table tfoot input { margin-left: 10px; }
 .air-social-table tfoot p { margin: 0; }
-.air-social-table tfoot p.bandit-credit { font-size: 11px; color: #999; text-align: right; margin-right: 20px; }
+.air-social-table tfoot p.bandit-credit { font-size: 11px; color: #aaa; text-align: right; margin-right: 15px; }
+.air-social-table tfoot p.bandit-credit a { color: #aaa; text-decoration: underline!important; }
+.air-social-table tfoot p.bandit-credit a:hover { text-decoration: none!important; }
 .air-social-table a.air-link-move,
 .air-social-table a.air-link-delete { width: 28px; height: 28px; float: left; display: block; }
 .air-social-table a.air-link-move:hover,
