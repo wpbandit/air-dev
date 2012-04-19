@@ -43,7 +43,7 @@ class AirBase {
 			@param $attrs array
 			@protected
 	**/
-	protected static function attributes(array $attrs) {
+	static function attributes(array $attrs) {
 		if(!empty($attrs)) {
 			$result = '';
 			foreach($attrs as $key=>$val)
