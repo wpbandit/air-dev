@@ -1,5 +1,11 @@
 jQuery(document).ready(function($) {
 
+	// Fade settings saved notice
+	// Fade settings-error div
+	if($('#air-save-notice').length) {
+		$('#air-save-notice').delay(2000).fadeOut();
+	}
+
 	// Image Select
 	if($('.air-image-button').length) {
 		var image_field;
