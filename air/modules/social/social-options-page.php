@@ -118,3 +118,13 @@ $url = air_social::get_var('url');
 	</div>
 
 </div><!-- end .air-module-container -->
+
+</div>
+<div class="air-clear"></div>
+</div><!--/air-main-inner-->
+			
+<div id="air-footer">
+	<p class="submit air-submit">
+		<input type="submit" class="button-primary" value="Save Changes" />
+	</p>
+</div><!--/air-footer-->
