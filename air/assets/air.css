@@ -121,9 +121,9 @@ input.air-error { border: 1px solid red; }
 .air-table tr { padding: 10px 0; }
 .air-table td { background: #fcfcfc; border-bottom: 1px solid #eee; padding: 15px 0;  }
 .air-table a.air-link-move,
-.air-table a.air-link-delete { width: 28px; height: 28px; float: left; display: block; }
+.air-table a.air-link-delete { width: 28px; height: 28px; float: left; display: block; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
 .air-table a.air-link-move:hover,
-.air-table a.air-link-delete:hover { background: #f1f1f1; }
+.air-table a.air-link-delete:hover { background: #eee; }
 .air-table a.air-link-move img,
 .air-table a.air-link-delete img{ margin: 8px; }
 
