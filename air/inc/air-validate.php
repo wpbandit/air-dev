@@ -54,13 +54,6 @@ class AirValidate extends AirBase {
 				break;
 		}
 
-		# Check for errors
-		/*if(!self::$error) {
-			// Add settings notice
-			add_settings_error('feather_setting_notices',
-				'feather-updated',__('Settings saved.','sprout'),'updated');
-		}*/
-
 		# Return validated options
 		return $valid;
 	}
@@ -163,7 +156,6 @@ class AirValidate extends AirBase {
 		$valid['sidebar-widget-search'] = isset($input['sidebar-widget-search'])?'1':'0';
 		# 404
 		$valid['sidebar-widget-404'] = isset($input['sidebar-widget-404'])?'1':'0';
-
 
 		# Return validated options
 		return $valid;
