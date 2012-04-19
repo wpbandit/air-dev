@@ -132,14 +132,18 @@ class Air extends AirBase {
 		# Register scripts
 		add_action('wp_enqueue_scripts',__CLASS__.'::register_scripts');
 
+		# Head and footer actions
+		add_action('wp_head',__CLASS__.'::wp_head');
+		add_action('wp_footer',__CLASS__.'::wp_footer');
+
 		# Filters
 		if(is_file(AIR_PATH.'/inc/air-filters.php')) {
 			require(AIR_PATH.'/inc/air-filters.php');
 		}
 
 		# Shortcodes
-		if(is_file(AIR_PATH.'/air-shortcodes.php')) {
-			require(AIR_PATH.'/air-shortcodes.php');
+		if(is_file(AIR_PATH.'/inc/air-shortcodes.php')) {
+			require(AIR_PATH.'/inc/air-shortcodes.php');
 		}
 	}
 
@@ -235,7 +239,6 @@ class Air extends AirBase {
 		} else {
 			$section = isset($_GET['section'])?esc_attr($_GET['section']):'social';
 		}
-
 
 		# Load options page
 		require(AIR_PATH.'/gui/air-'.$page.'-page.php');
@@ -399,6 +402,32 @@ class Air extends AirBase {
 				wp_register_script($handle,$src,$deps,$ver,$footer);
 			}
 		}
+	}
+
+	/**
+		WP Head
+			@public
+	**/
+	static function wp_head() {
+		# Favicon
+		if(self::get_option('favicon'))
+			echo '<link rel="shortcut icon" href="'.self::$option['favicon'].'">'."\n";
+
+		# Analytics script
+		if(self::get_option('analytics-script'))
+			if('header'===self::get_option('analytics-location'))
+				echo self::$option['analytics-script']."\n";
+	}
+
+	/**
+		WP Footer
+			@public
+	**/
+	static function wp_footer() {
+		# Analytics script
+		if(self::get_option('analytics-script'))
+			if('footer'===self::get_option('analytics-location'))
+				echo self::$option['analytics-script']."\n";
 	}
 
 	/**
