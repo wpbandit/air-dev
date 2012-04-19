@@ -127,7 +127,7 @@ input.air-error { border: 1px solid red; }
 .air-table a.air-link-move img,
 .air-table a.air-link-delete img{ margin: 8px; }
 
-.air-table tfoot td { border-bottom: 0; padding: 10px 0; }
+.air-table tfoot td { border-bottom: 0; padding: 10px; }
 .air-table tfoot input { margin-left: 10px; }
 .air-table tfoot p { margin: 0; }
 
@@ -164,7 +164,7 @@ input.air-error { border: 1px solid red; }
 
 #air-social .air-table thead th.icon { padding-left: 10px; }
 #air-social .air-table td.icon img { margin: 5px 10px; float: left; }
-#air-social .air-table tfoot p.bandit-credit { font-size: 11px; color: #aaa; text-align: right; margin-right: 15px; }
+#air-social .air-table tfoot p.bandit-credit { font-size: 11px; color: #aaa; }
 #air-social .air-table tfoot p.bandit-credit a { color: #aaa; text-decoration: underline!important; }
 #air-social .air-table tfoot p.bandit-credit a:hover { text-decoration: none!important; }
 
