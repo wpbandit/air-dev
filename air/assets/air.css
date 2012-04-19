@@ -28,12 +28,12 @@ label { cursor: auto; }
 /*-------------------------------------------------------------------------- */
 /* Header
 /*-------------------------------------------------------------------------- */
-#air-header { background: #6d6d6d url(img/air-header.png) repeat-x top; color: #fff; text-shadow: 0 1px 0 rgba(0,0,0,0.3); height: 70px; position: relative; border-bottom: 1px solid #444; border-right: 1px solid #555; border-left: 1px solid #555; 
+#air-header { background: #6d6d6d url(img/air-header.png) repeat-x top; color: #fff; text-shadow: 0 1px 0 rgba(0,0,0,0.3); height: 60px; position: relative; border-bottom: 1px solid #444; border-right: 1px solid #555; border-left: 1px solid #555; 
 -moz-border-radius: 10px 10px 0 0; -webkit-border-radius: 10px 10px 0 0; border-radius: 10px 10px 0 0; }
 
-#air-header a#wpbandit-logo { background: url(img/wpbandit-logo.png) no-repeat 0 0; width: 270px; height: 32px; position: absolute; top: 21px; left: 20px; overflow: hidden; text-indent: -999px; }
-#air-header #air-theme-version { font-weight: bold; font-size: 18px; position: absolute; right: 20px; top: 17px; }
-#air-header #air-air-version { color: #ccc; position: absolute; right: 20px; bottom: 15px; }
+#air-header a#wpbandit-logo { background: url(img/wpbandit-logo.png) no-repeat 0 0; width: 270px; height: 32px; position: absolute; top: 16px; left: 20px; overflow: hidden; text-indent: -999px; }
+#air-header #air-theme-version { font-weight: bold; font-size: 18px; position: absolute; right: 20px; top: 14px; }
+#air-header #air-air-version { color: #ccc; position: absolute; right: 20px; bottom: 10px; }
 
 
 /*-------------------------------------------------------------------------- */
