@@ -56,7 +56,7 @@ $items = air_social::get_items();
 					
 					<div id="air-default-icons">
 						<?php echo air_social::get_icon_list('default'); ?>
-						<p class="air-icons-credit">Social Network Icon Pack by <a href="http://www.komodomedia.com" target="_blank">Komodo Media</a></p>
+						<p class="air-credit">Social Network Icon Pack by <a href="http://www.komodomedia.com" target="_blank">Komodo Media</a></p>
 					</div>
 				</div>
 			</div>
@@ -102,7 +102,7 @@ $items = air_social::get_items();
 				<tfoot>
 					<tr>
 						<td colspan="4">
-							<p class="bandit-credit">Module inspired by <a href="http://shakenandstirredweb.com/plugins/social-bartender/" target="_blank">Sawyer Hollenshead</a></p>
+							<p class="air-credit">Module inspired by <a href="http://shakenandstirredweb.com/plugins/social-bartender/" target="_blank">Sawyer Hollenshead</a></p>
 						</td>
 					</tr>
 				</tfoot>

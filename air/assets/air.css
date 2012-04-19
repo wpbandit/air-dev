@@ -131,6 +131,11 @@ input.air-error { border: 1px solid red; }
 .air-table tfoot input { margin-left: 10px; }
 .air-table tfoot p { margin: 0; }
 
+/* credit text */
+.air-credit { font-size: 11px; color: #aaa; margin: 0; }
+.air-credit a { color: #aaa; text-decoration: underline!important; }
+.air-credit a:hover { text-decoration: none!important; }
+
 
 /*-------------------------------------------------------------------------- */
 /* Module: Social
@@ -155,18 +160,13 @@ input.air-error { border: 1px solid red; }
 #air-social  #air-icons-tabs .ui-tabs-panel { background: #fff; border: 1px solid #dfdfdf; overflow: auto; }
 
 /* social: icons box credit */
-#air-social .air-icons-credit { font-size: 11px; color: #aaa; padding: 10px; margin: 0; border-top: 1px solid #f1f1f1; }
-#air-social .air-icons-credit a { color: #aaa; text-decoration: underline!important; }
-#air-social .air-icons-credit a:hover { text-decoration: none!important; }
+#air-social #air-icons-tabs .air-credit { padding: 10px; border-top: 1px solid #f1f1f1; }
 
 /* social: table */
 #air-social-content { clear: both; margin-top: 20px; }
 
 #air-social .air-table thead th.icon { padding-left: 10px; }
 #air-social .air-table td.icon img { margin: 5px 10px; float: left; }
-#air-social .air-table tfoot p.bandit-credit { font-size: 11px; color: #aaa; }
-#air-social .air-table tfoot p.bandit-credit a { color: #aaa; text-decoration: underline!important; }
-#air-social .air-table tfoot p.bandit-credit a:hover { text-decoration: none!important; }
 
 
 /*-------------------------------------------------------------------------- */
