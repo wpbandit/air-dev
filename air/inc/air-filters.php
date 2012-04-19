@@ -7,7 +7,7 @@
 /**
 	Feed Link
 **/
-function air_filter_feedlink($output,$feed) {
+function air_feed_link($output,$feed) {
 	$feed_url = Air::get_option('feed-url');
 	$feed_array = array(
 		'rss'			=> $feed_url,
@@ -20,17 +20,27 @@ function air_filter_feedlink($output,$feed) {
 	return $feed_array[$feed];
 }
 if(Air::get_option('feed-url')) {
-	add_filter('feed_link','air_filter_feedlink',10,2);
+	add_filter('feed_link','air_feed_link',10,2);
+}
+
+/**
+	Content More
+**/
+function air_the_content_more_link($more_link,$more_link_text) {
+	return str_replace($more_link_text,Air::get_option('read-more'),$more_link );
+}
+if(Air::get_option('read-more')) {
+	add_filter( 'the_content_more_link','air_the_content_more_link',10,2);
 }
 
 /**
 	Excerpt More
 **/
-function air_excerpt_more_filter($more) {
+function air_excerpt_more($more) {
 	return '...';
 }
 if(Air::get_option('excerpt-more')) {
-	add_filter('excerpt_more','air_excerpt_more_filter');
+	add_filter('excerpt_more','air_excerpt_more');
 }
 
 /**
