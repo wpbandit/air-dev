@@ -165,7 +165,7 @@ class AirValidate extends AirBase {
 		# Footer Text
 		$valid['footer-text'] = esc_textarea($input['footer-text']);
 		# Footer Widgets
-		$valid['footer-widgets'] = isset($input['footer-widgets'])?'1':'0';;
+		$valid['footer-widgets'] = isset($input['footer-widgets'])?'1':'0';
 
 		# Return validated options
 		return $valid;
