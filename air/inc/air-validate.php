@@ -70,6 +70,8 @@ class AirValidate extends AirBase {
 		$valid['style'] = esc_attr($input['style']);
 		# Custom Stylesheet
 		$valid['custom-css'] = isset($input['custom-css'])?'1':'0';
+		# Favicon
+		$valid['favicon'] = esc_url($input['favicon']);
 		# Feed URL
 		$valid['feed-url'] = esc_url($input['feed-url']);
 		# Analytics Location
