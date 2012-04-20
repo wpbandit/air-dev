@@ -18,6 +18,11 @@
 		<div id="air-main">
 
 			<div id="air-subheader">
+				<?php if(isset($_GET['settings-updated']) && ('true'===$_GET['settings-updated'])): ?>
+					<div id="air-save-notice">
+						<p>Settings saved.</p>
+					</div>
+				<?php endif; ?>
 				<ul id="air-headmenu">
 					<li><a href="#"><i class="air-icon air-icon-changelog"></i>View Changelog</a></li>
 					<li><a href="http://member.wpbandit.com/forums/" target="_blank"><i class="air-icon air-icon-forums"></i>View Forums</a></li>
@@ -26,12 +31,6 @@
 
 			<div id="air-main-inner" class="air-text">
 				<div class="air-section">
-					
-				<?php if(isset($_GET['settings-updated']) && ('true'===$_GET['settings-updated'])): ?>
-					<div id="air-save-notice">
-						<p>Settings saved.</p>
-					</div>
-				<?php endif; ?>
 
 					<?php require(AIR_PATH.'/modules/'.$section.'/'.$section.'-options-page.php'); ?>
 
