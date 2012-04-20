@@ -11,7 +11,7 @@ label { cursor: auto; }
 .air-text { color: #777; line-height: 1.5em; }
 .air-text h3 { font-size: 14px; color: #444; font-weight: bold; border-bottom: 1px solid #eee; padding-bottom: 6px; margin-bottom: 10px; margin-top: 20px; }
 
-#air-save-notice { background: #21759b url(img/button-grad.png) repeat-x top; float: left; margin: 6px 7px; padding: 0 12px; font-weight: bold; text-transform: uppercase; color: #fff; text-shadow: none; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
+#air-save-notice { background: #21759b url(img/button-grad.png) repeat-x top; float: left; margin: 6px 7px; padding: 0 12px; font-weight: bold; text-transform: uppercase; color: #fff; text-shadow: 0 -1px 0 rgba(0,0,0,0.3); -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
 #air-save-notice p { margin: 5px 0 4px; }
 
 .air-image-placeholder {  }
