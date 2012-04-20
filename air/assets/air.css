@@ -22,7 +22,8 @@ label { cursor: auto; }
 #air-wrap a { text-decoration: none; }
 #air-wrap input[type="text"],
 #air-wrap textarea,
-#air-wrap select { color: #555; }
+#air-wrap select,
+#air-wrap strong { color: #555; }
 
 
 /*-------------------------------------------------------------------------- */
