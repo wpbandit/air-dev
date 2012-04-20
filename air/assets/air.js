@@ -2,7 +2,7 @@ jQuery(document).ready(function($) {
 
 	// Fade settings saved notice
 	if($('#air-save-notice').length) {
-		$('#air-save-notice').delay(3000).fadeOut();
+		$('#air-save-notice').delay(4000).fadeOut();
 	}
 
 	// Image Select
