@@ -37,7 +37,7 @@ if(Air::get_option('read-more')) {
 	Excerpt More
 **/
 function air_excerpt_more($more) {
-	return '...';
+	return Air::get_option('excerpt-more');
 }
 if(Air::get_option('excerpt-more')) {
 	add_filter('excerpt_more','air_excerpt_more');
