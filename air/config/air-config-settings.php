@@ -168,7 +168,7 @@ $setting[] = array(
 	'label'		=> 'Excerpt Ending',
 	'section'	=> 'blog-general',
 	'type'		=> 'text',
-	'class'		=> 'small-text'
+	'class'		=> 'medium-text'
 );
 
 //! Excerpt Length
