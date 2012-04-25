@@ -178,6 +178,7 @@ class Air extends AirBase {
 
 		# Action to create settings
 		add_action('load-'.self::$hook[0],__CLASS__.'::admin_settings');
+		add_action('load-'.self::$hook[1],__CLASS__.'::admin_module_settings');
 	}
 
 	/**
@@ -267,6 +268,15 @@ class Air extends AirBase {
 
 		# Create settings
 		AirSettings::init(self::$option_name,$setting);
+	}
+
+	/**
+		Admin module settings
+			@public
+	**/
+	static function admin_module_settings() {
+		# Load settings library
+		require(AIR_PATH.'/inc/air-settings.php');
 	}
 
 	/**
