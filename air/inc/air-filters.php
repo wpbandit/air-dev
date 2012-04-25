@@ -5,6 +5,31 @@
 /*-------------------------------------------------------------------------- */
 
 /**
+	WP Title
+**/
+function air_wp_title($title) {
+	# Set title for home page
+	if(is_front_page()) {
+		$title = Air::get_option('seo-home-title');
+		if(!$title) { $title = get_bloginfo('name'); }
+	}
+
+	# Append site name to the title
+	if(!is_front_page() && Air::get_option('seo-title-append-sitename')) {
+		# Get separator
+		$sep = Air::get_option('seo-title-separator');
+		if(!$sep) { $sep = '-'; }
+
+		# Append separator and site name to title
+		$title .= ' '.$sep.' '.get_bloginfo('name');
+	}
+
+	# Return title
+	return $title;
+}
+add_filter('wp_title','air_wp_title');
+
+/**
 	Feed Link
 **/
 function air_feed_link($output,$feed) {
