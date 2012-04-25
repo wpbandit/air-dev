@@ -87,6 +87,19 @@ class Air extends AirBase {
 		define('AIR_PATH',get_template_directory().'/air');
 		define('AIR_URL',get_template_directory_uri().'/air');
 
+		# Global $pagenow variable
+		global $pagenow;
+		# Permalinks
+		$permalinks = get_option('permalink_structure');
+
+		# Hydrate framework variables
+		self::$vars = array(
+			# Global $pagenow variable
+			'PAGENOW' => $pagenow,
+			# Permalinks
+			'PERMALINKS' => ($permalinks && ($permalinks != ''))?TRUE:FALSE,
+		);
+
 		# Load theme configuration
 		global $airconfig;
 		self::$config = $airconfig;
