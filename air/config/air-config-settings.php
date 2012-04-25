@@ -105,6 +105,53 @@ $setting[] = array(
 
 
 /*-------------------------------------------------------------------------- */
+/* Theme Settings :: SEO
+/*-------------------------------------------------------------------------- */
+
+/* SEO: Title
+/*---------------------------------------------------------*/
+$setting['sections']['seo-title'] = array(
+	'title'		=> 'Title',
+	'tab'		=> 'seo'
+);
+
+//! Append site name to title
+$setting[] = array(
+	'id'		=> 'seo-title-append-sitename',
+	'label'		=> 'Site Name',
+	'section'	=> 'seo-title',
+	'type'		=> 'checkbox',
+	'choices'	=> array(
+		'seo-title-append-sitename' => 'Append site name to title'
+	),
+);
+
+//! Title separator
+$setting[] = array(
+	'id'		=> 'seo-title-separator',
+	'label'		=> 'Separator',
+	'section'	=> 'seo-title',
+	'type'		=> 'text',
+	'class'		=> 'small-text'
+);
+
+/* SEO: Home Page
+/*---------------------------------------------------------*/
+$setting['sections']['seo-home'] = array(
+	'title'		=> 'Home Page',
+	'tab'		=> 'seo'
+);
+
+//! Home page title
+$setting[] = array(
+	'id'		=> 'seo-home-title',
+	'label'		=> 'Title',
+	'section'	=> 'seo-home',
+	'type'		=> 'text',
+);
+
+
+/*-------------------------------------------------------------------------- */
 /* Theme Settings :: Header
 /*-------------------------------------------------------------------------- */
 

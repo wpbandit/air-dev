@@ -40,6 +40,9 @@ class AirValidate extends AirBase {
 			case 'blog':
 				$valid = self::blog($input,$valid);
 				break;
+			case 'seo':
+				$valid = self::seo($input,$valid);
+				break;
 			case 'header':
 				$valid = self::header($input,$valid);
 				break;
@@ -120,6 +123,26 @@ class AirValidate extends AirBase {
 		$valid['comments-pages-disable'] = isset($input['comments-pages-disable'])?'1':'0';
 		# Disable Comments Posts
 		$valid['comments-posts-disable'] = isset($input['comments-posts-disable'])?'1':'0';
+
+		# Return validated options
+		return $valid;
+	}
+
+	/**
+		SEO
+			@return array
+			@param $input array
+			@param $valid array
+			@private
+	**/
+	private static function seo(array $input, $valid) {
+		# Append site name to title
+		$valid['seo-title-append-sitename'] = isset($input['seo-title-append-sitename'])?'1':'0';
+		# Title separator
+		$valid['seo-title-separator'] = esc_attr($input['seo-title-separator']);
+
+		# Home page title
+		$valid['seo-home-title'] = esc_attr($input['seo-home-title']);
 
 		# Return validated options
 		return $valid;
