@@ -25,6 +25,8 @@ class AirBase {
 		
 	//@{ Global variables
 	protected static
+		//! Framework variables
+		$vars,
 		//! Theme configuration
 		$config,
 		//! Admin menu slug
