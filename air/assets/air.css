@@ -76,7 +76,7 @@ i.air-icon { background: url(img/air-icons.png) no-repeat 0 0; width: 16px; heig
 i.air-icon.air-icon-changelog { background-position: 0 -16px; }
 i.air-icon.air-icon-forums { background-position: 0 -32px; }
 
-/* sidebar icons */
+/* sidebar icons : options */
 i.air-icon.air-icon-general { background-position: 0 -64px; }
 i.air-icon.air-icon-blog { background-position: 0 -80px; }
 i.air-icon.air-icon-seo { background-position: 0 -96px; }
@@ -85,6 +85,11 @@ i.air-icon.air-icon-footer { background-position: 0 -128px; }
 i.air-icon.air-icon-sidebar { background-position: 0 -144px; }
 i.air-icon.air-icon-styling { background-position: 0 -160px; }
 i.air-icon.air-icon-typography { background-position: 0 -176px; }
+
+/* sidebar icons : modules */
+i.air-icon.air-icon-social { background-position: 0 -240px; }
+i.air-icon.air-icon-login { background-position: 0 -256px; }
+i.air-icon.air-icon-maintenance { background-position: 0 -272px; }
 
 
 /*-------------------------------------------------------------------------- */
